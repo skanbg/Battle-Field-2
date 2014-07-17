@@ -10,18 +10,19 @@
     {
         private GameField field;
 
-        public GameField Field
-        {
-            get { return this.field; }
-            set { this.field = value; }
-        }
-
         public GameEngine()
         {
         }
 
+		public GameField Field
+        {
+            get { return this.field; }
+            set { this.field = value; }
+        }
+		
         public void Start()
         {
+			// initial game field
             int fieldSize = GameField.ReadFieldSize();
             this.Field = new GameField(fieldSize);
 

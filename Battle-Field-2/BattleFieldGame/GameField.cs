@@ -14,7 +14,17 @@
         private string[,] field;
         private static Random rnd = new Random();
 
-        public int FieldSize
+        public GameField(int fieldSize)
+        {
+            this.FieldSize = fieldSize;
+            this.Field = new string[this.FieldSize, this.FieldSize];
+            this.GenerateField();
+            this.initialMines = CalculateInitialMinesCount();
+            this.MinesCount = this.initialMines;
+            this.GenerateMines();
+        }
+		
+		public int FieldSize
         {
             get { return this.fieldSize; }
             set { this.fieldSize = value; }
@@ -36,17 +46,7 @@
             get { return this.field; }
             set { this.field = value; }
         }
-
-        public GameField(int fieldSize)
-        {
-            this.FieldSize = fieldSize;
-            this.Field = new string[this.FieldSize, this.FieldSize];
-            this.GenerateField();
-            this.initialMines = CalculateInitialMinesCount();
-            this.MinesCount = this.initialMines;
-            this.GenerateMines();
-        }
-
+		
         private void GenerateField()
         {
             for (int i = 0; i < this.FieldSize; i++)
