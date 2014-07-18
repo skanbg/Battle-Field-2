@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class GameField
+    public class GameField : IGameField
     {
         private int fieldSize;
         private readonly int initialMines;

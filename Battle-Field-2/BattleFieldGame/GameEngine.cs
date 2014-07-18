@@ -6,15 +6,15 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class GameEngine
+    public class GameEngine : IGameEngine
     {
-        private GameField field;
+        private IGameField field;
 
         public GameEngine()
         {
         }
 
-		public GameField Field
+		public IGameField Field
         {
             get { return this.field; }
             set { this.field = value; }
@@ -22,9 +22,11 @@
 		
         public void Start()
         {
+            ObjectFactory factory = Factory.Get();
+
 			// initial game field
-            int fieldSize = GameField.ReadFieldSize();
-            this.Field = new GameField(fieldSize);
+            int fieldSize = 5; //TODO: create beatter whey to read fiald size!  //GameField.ReadFieldSize();
+            this.Field = factory.CreateGameField(fieldSize);
 
             do
             {

@@ -1,10 +1,6 @@
 ﻿namespace BattleFieldGame
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class Program
     {
@@ -12,7 +8,9 @@
         {
             Console.WriteLine("Welcome to the Battle Field game");
 
-            var gameEngine = new GameEngine();
+            ObjectFactory factory = new GameFactory();
+
+            var gameEngine = Factory.Get().CreateGameEngine();
             gameEngine.Start();
         }
     }
