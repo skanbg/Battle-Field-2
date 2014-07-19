@@ -14,18 +14,18 @@
         {
         }
 
-		public IGameField Field
+        public IGameField Field
         {
             get { return this.field; }
             set { this.field = value; }
         }
-		
+
         public void Start()
         {
             ObjectFactory factory = Factory.Get();
 
-			// initial game field
-            int fieldSize = 5; //TODO: create beatter whey to read fiald size!  //GameField.ReadFieldSize();
+            // initial game field
+            int fieldSize = 5; //TODO: create beatter whey to read field size!  //GameField.ReadFieldSize();
             this.Field = factory.CreateGameField(fieldSize);
 
             do
@@ -34,10 +34,27 @@
 
                 do
                 {
+                    XCoord = -1;
+                    YCoord = -1;
                     Console.Write("Enter coordinates: ");
                     string coordinates = Console.ReadLine();
-                    XCoord = Convert.ToInt32(coordinates.Substring(0, 1));
-                    YCoord = Convert.ToInt32(coordinates.Substring(2));
+                    string[] coords = coordinates.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    if (coords.Length != 2)
+                    {
+                        Console.WriteLine("Invalid coordinates!");
+                        continue;
+                    }
+                    if (!Int32.TryParse(coords[0], out XCoord))
+                    {
+                        Console.WriteLine("Invalid first coordinate!");
+                        continue;
+                    }
+                    if (!Int32.TryParse(coords[1], out YCoord))
+                    {
+                        Console.WriteLine("Invalid second coordinate!");
+                        continue;
+                    }
+
 
                     if ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] == " - "))
                     {
