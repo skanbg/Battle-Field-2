@@ -41,19 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory.cs" />
-    <Compile Include="GameEngine.cs" />
-    <Compile Include="GameFactory.cs" />
-    <Compile Include="GameField.cs" />
-    <Compile Include="IGameEngine.cs" />
-    <Compile Include="IGameField.cs" />
-    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="Factories\Factory.cs" />
+    <Compile Include="Engine\GameEngine.cs" />
+    <Compile Include="Factories\GameFactory.cs" />
+    <Compile Include="GameObjects\GameField.cs" />
+    <Compile Include="Interfaces\IGameEngine.cs" />
+    <Compile Include="Interfaces\IGameField.cs" />
+    <Compile Include="Factories\ObjectFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

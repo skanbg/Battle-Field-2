@@ -1,10 +1,8 @@
-﻿namespace BattleFieldGame
+﻿namespace BattleFieldGame.Factories
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using BattleFieldGame.Interfaces;
+    using BattleFieldGame.Engine;
+    using BattleFieldGame.GameObjects;
 
     public class GameFactory : ObjectFactory
     {

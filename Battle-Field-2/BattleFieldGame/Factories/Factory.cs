@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame
+﻿namespace BattleFieldGame.Factories
 {
     public static class Factory
     {

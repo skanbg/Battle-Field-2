@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame
+﻿namespace BattleFieldGame.Interfaces
 {
     public interface IGameField
     {

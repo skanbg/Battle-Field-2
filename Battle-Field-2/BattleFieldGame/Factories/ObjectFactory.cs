@@ -1,5 +1,6 @@
-﻿namespace BattleFieldGame
+﻿namespace BattleFieldGame.Factories
 {
+    using BattleFieldGame.Interfaces;
     public abstract class ObjectFactory
     {
         public abstract IGameEngine CreateGameEngine();

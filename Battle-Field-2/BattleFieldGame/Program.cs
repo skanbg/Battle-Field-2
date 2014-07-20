@@ -1,6 +1,7 @@
 ﻿namespace BattleFieldGame
 {
     using System;
+    using BattleFieldGame.Factories;
 
     public class Program
     {
