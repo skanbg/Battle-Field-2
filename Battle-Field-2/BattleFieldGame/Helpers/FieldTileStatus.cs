@@ -1,8 +1,8 @@
 namespace BattleFieldGame.Helpers
 {
-    enum FieldTileStatus
+    public enum FieldTileStatus
     {
-        Normal,
+        Initial,
         Detonated
     }
 }

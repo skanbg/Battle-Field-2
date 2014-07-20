@@ -3,11 +3,9 @@
     using BattleFieldGame.Helpers;
     interface IFieldTile
     {
-        int XCoord { get; }
-
-        int YCoord { get; }
-
-        FieldTileTypes Type { get; }
+        Coords Coordinates { get; }
+        
+        FieldTileType Type { get; }
 
         FieldTileStatus Status { get; }
 

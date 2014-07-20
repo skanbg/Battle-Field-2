@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleFieldGame.Helpers
 {
-    enum FieldTileTypes
+    public enum FieldTileType
     {
         EmptyTile,
         MineTile
