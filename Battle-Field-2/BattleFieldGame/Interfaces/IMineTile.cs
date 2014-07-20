@@ -3,7 +3,7 @@
     using BattleFieldGame.Helpers;
     interface IMineTile : IFieldTile
     {
-        MineDetonationType type { get; }
+        MineDetonationType Type { get; }
 
         void Detonate(IGameField field, IMineDetonationStrategy strategy);
     }

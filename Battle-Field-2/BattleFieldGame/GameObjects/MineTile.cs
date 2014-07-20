@@ -3,26 +3,37 @@
     using System;
     using BattleFieldGame.Helpers;
     using BattleFieldGame.Interfaces;
+    using System.Collections.Generic;
 
     class MineTile : FieldTile, IMineTile
     {
-        public MineTile(Coords coords, FieldTileType type) : base(coords, type)
+        private const FieldTileType MineTileType = FieldTileType.MineTile;
+
+        private readonly MineDetonationType detonationType;
+        public MineTile(Coords coords, MineDetonationType detonationType) : base(coords, MineTile.MineTileType)
         {
+            this.detonationType = detonationType;
         }
 
-        public MineDetonationType type
+        public MineDetonationType Type
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return this.detonationType;
             }
         }
 
         public void Detonate(IGameField field, IMineDetonationStrategy strategy)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            this.SetStatus(FieldTileStatus.Detonated);
+            List<Coords> explosionCoords = strategy.GetExplosionCoordinates();
+            foreach (var coord in explosionCoords)
+            {
+                if (coord.X >=0 && coord.X < field.FieldSize && coord.Y >=0 && coord.Y < field.FieldSize)
+                {
+                    //detonate the mine at the position
+                }
+            }
         }
     }
 }
