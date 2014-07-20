@@ -10,7 +10,8 @@
         private const FieldTileType MineTileType = FieldTileType.MineTile;
 
         private readonly MineDetonationType detonationType;
-        public MineTile(Coords coords, MineDetonationType detonationType) : base(coords, MineTile.MineTileType)
+        public MineTile(Coords coords, MineDetonationType detonationType)
+            : base(coords, MineTile.MineTileType)
         {
             this.detonationType = detonationType;
         }
@@ -27,9 +28,12 @@
         {
             this.SetStatus(FieldTileStatus.Detonated);
             List<Coords> explosionCoords = strategy.GetExplosionCoordinates();
+
             foreach (var coord in explosionCoords)
             {
-                if (coord.X >=0 && coord.X < field.FieldSize && coord.Y >=0 && coord.Y < field.FieldSize)
+                var xCoord = coord.X + this.Coordinates.X;
+                var yCoord = coord.Y + this.Coordinates.Y;
+                if (xCoord >= 0 && xCoord < field.FieldSize && yCoord >= 0 && yCoord < field.FieldSize)
                 {
                     //detonate the mine at the position
                 }

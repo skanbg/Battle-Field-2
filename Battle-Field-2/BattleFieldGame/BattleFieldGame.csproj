@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetonationStretegies\DoubleDetonationStrategy.cs" />
+    <Compile Include="DetonationStretegies\QuadripleDetonationStrategy.cs" />
+    <Compile Include="DetonationStretegies\QuintupleDetonationStrategy.cs" />
+    <Compile Include="DetonationStretegies\SingleDetonationStrategy.cs" />
+    <Compile Include="DetonationStretegies\TripleDetonationStretegy.cs" />
     <Compile Include="Factories\Factory.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Factories\GameFactory.cs" />
