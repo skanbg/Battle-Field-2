@@ -46,6 +46,7 @@
     <Compile Include="DetonationStretegies\QuintupleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\SingleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\TripleDetonationStretegy.cs" />
+    <Compile Include="Factories\DetonationStrategyFactory.cs" />
     <Compile Include="Factories\Factory.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Factories\GameFactory.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Helpers\FieldTileStatus.cs" />
     <Compile Include="Helpers\FieldTileType.cs" />
     <Compile Include="Helpers\MineDetonationType.cs" />
+    <Compile Include="Interfaces\IDetonationStrategyFactory.cs" />
     <Compile Include="Interfaces\IFieldTile.cs" />
     <Compile Include="Interfaces\IGameEngine.cs" />
     <Compile Include="Interfaces\IGameField.cs" />
