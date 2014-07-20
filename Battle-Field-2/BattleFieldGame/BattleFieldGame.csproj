@@ -45,9 +45,13 @@
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Factories\GameFactory.cs" />
     <Compile Include="GameObjects\GameField.cs" />
+    <Compile Include="Helpers\FieldTileStatus.cs" />
+    <Compile Include="Helpers\FieldTileTypes.cs" />
+    <Compile Include="Interfaces\IFieldTile.cs" />
     <Compile Include="Interfaces\IGameEngine.cs" />
     <Compile Include="Interfaces\IGameField.cs" />
     <Compile Include="Factories\ObjectFactory.cs" />
+    <Compile Include="Interfaces\IMineTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
