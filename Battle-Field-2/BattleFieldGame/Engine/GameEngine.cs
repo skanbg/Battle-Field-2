@@ -20,10 +20,10 @@
 
         public void Start()
         {
-            ObjectFactory factory = Factory.Get();
+            var factory = Factory.Get();
 
             // initial game field
-            int fieldSize = 5; //TODO: create beatter whey to read field size!  //GameField.ReadFieldSize();
+            int fieldSize = 5; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
             this.Field = factory.CreateGameField(fieldSize);
 
             do
