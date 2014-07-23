@@ -10,7 +10,7 @@
         private readonly int initialMines;
         private int minesCount;
         private IFieldTile[,] field;
-        private static Random rnd = new Random();
+        private static readonly Random rnd = new Random();
 
         public GameField(int fieldSize)
         {
@@ -118,28 +118,28 @@
             return fieldSize;
         }
 
-        public void DetonateMine(int XCoord, int YCoord)
+        public void DetonateMine(int xCoord, int yCoord)
         {
-            //switch (Convert.ToInt32(this.Field[XCoord, YCoord]))
+            //switch (Convert.ToInt32(this.Field[xCoord, yCoord]))
             //{
             //    case 1:
-            //        this.DetonateMine1(XCoord, YCoord);
+            //        this.DetonateMine1(xCoord, yCoord);
             //        break;
             //    case 2:
-            //        this.DetonateMine2(XCoord, YCoord);
+            //        this.DetonateMine2(xCoord, yCoord);
             //        break;
             //    case 3:
-            //        this.DetonateMine3(XCoord, YCoord);
+            //        this.DetonateMine3(xCoord, yCoord);
             //        break;
             //    case 4:
-            //        this.DetonateMine4(XCoord, YCoord);
+            //        this.DetonateMine4(xCoord, yCoord);
             //        break;
             //    case 5:
-            //        this.GrymniPetaBomba(XCoord, YCoord);
+            //        this.GrymniPetaBomba(xCoord, yCoord);
             //        break;
             //}
 
-            this.minesCount--;
+            //this.minesCount--;
         }
 
         //public void DetonateMine1(int XCoord, int YCoord)

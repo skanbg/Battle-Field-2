@@ -4,6 +4,7 @@
     using BattleFieldGame.Interfaces;
     using BattleFieldGame.Factories;
     using BattleFieldGame.GameObjects;
+    using BattleFieldGame.Renderer;
     public class GameEngine : IGameEngine
     {
         private IGameField field;
@@ -25,7 +26,7 @@
             // initial game field
             int fieldSize = 10; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
             this.Field = factory.CreateGameField(fieldSize);
-
+            var renderer = new GameFieldConsoleRenderer();
             do
             {
                 int XCoord, YCoord;
@@ -62,7 +63,8 @@
                 while ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] is EmptyFieldTile));
 
                 //this.Field.DetonateMine(XCoord, YCoord);
-                this.Field.DisplayField();
+                //this.Field.DisplayField();
+                renderer.Render(this.Field);
             }
             while (this.Field.MinesCount > 0);
 

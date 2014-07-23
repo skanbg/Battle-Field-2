@@ -64,10 +64,12 @@
     <Compile Include="Interfaces\IGameEngine.cs" />
     <Compile Include="Interfaces\IGameField.cs" />
     <Compile Include="Factories\ObjectFactory.cs" />
+    <Compile Include="Interfaces\IGameFieldRenderer.cs" />
     <Compile Include="Interfaces\IMineDetonationStrategy.cs" />
     <Compile Include="Interfaces\IMineTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\GameFieldConsoleRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
