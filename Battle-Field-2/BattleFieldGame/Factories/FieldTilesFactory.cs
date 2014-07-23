@@ -9,9 +9,9 @@
         {
             return new EmptyFieldTile();
         }
-        public IMineTile GetMineTile(MineDetonationType detonationType)
+        public IMineTile GetMineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy)
         {
-            return new MineTile(detonationType);
+            return new MineTile(detonationType, detonationStrategy);
         }
     }
 }

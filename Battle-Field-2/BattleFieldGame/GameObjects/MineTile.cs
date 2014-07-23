@@ -10,10 +10,12 @@
         private const FieldTileType MineTileType = FieldTileType.MineTile;
 
         private readonly MineDetonationType detonationType;
-        public MineTile(MineDetonationType detonationType)
-            : base(MineTile.MineTileType)
+        private readonly IMineDetonationStrategy detonationStrategy;
+
+        public MineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy) : base(MineTile.MineTileType)
         {
             this.detonationType = detonationType;
+            this.detonationStrategy = detonationStrategy;
         }
 
         public MineDetonationType DetonationType
@@ -24,11 +26,10 @@
             }
         }
 
-        public void Detonate(IMineDetonationStrategy strategy)
+        public List<Coords> ExecuteDetonation()
         {
             this.Status = FieldTileStatus.Detonated;
-            List<Coords> explosionCoords = strategy.GetExplosionCoordinates();
-
+            return this.detonationStrategy.GetExplosionCoordinates();
            // Implement detonation strategy
         }
     }

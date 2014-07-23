@@ -1,10 +1,11 @@
 ﻿namespace BattleFieldGame.Interfaces
 {
     using BattleFieldGame.Helpers;
+    using System.Collections.Generic;
    public interface IMineTile : IFieldTile
     {
         MineDetonationType DetonationType { get; }
 
-        void Detonate(IMineDetonationStrategy strategy);
+        List<Coords> ExecuteDetonation();
     }
 }

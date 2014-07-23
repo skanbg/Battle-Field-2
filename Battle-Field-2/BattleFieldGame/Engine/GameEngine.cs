@@ -63,8 +63,7 @@
                 }
                 while ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field.Field[xCoord, yCoord] is EmptyFieldTile));
 
-                //this.Field.DetonateMine(XCoord, YCoord);
-                //this.Field.DisplayField();
+                this.Field.DetonateMine(xCoord, yCoord);
                 renderer.Render(this.Field);
             }
             while (this.Field.MinesCount > 0);

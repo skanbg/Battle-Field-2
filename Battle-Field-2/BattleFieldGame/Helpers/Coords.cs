@@ -27,10 +27,10 @@ namespace BattleFieldGame.Helpers
             }
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
-                }
+                //if (value < 0)
+                //{
+                //    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
+                //}
                 this.yCoord = value;
             }
         }
@@ -43,10 +43,10 @@ namespace BattleFieldGame.Helpers
             }
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
-                }
+                //if (value < 0)
+                //{
+                //    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
+                //}
                 this.xCoord = value;
             }
         }

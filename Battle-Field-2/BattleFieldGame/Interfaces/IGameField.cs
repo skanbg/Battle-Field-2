@@ -22,7 +22,7 @@
             get;
         }
 
-        //void DetonateMine(int XCoord, int YCoord);
+        void DetonateMine(int xCoord, int yCoord);
 
         //void DetonateMine1(int XCoord, int YCoord);
 

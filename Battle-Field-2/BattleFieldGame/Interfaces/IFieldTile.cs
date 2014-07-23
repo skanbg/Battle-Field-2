@@ -6,7 +6,7 @@
 
         FieldTileType TileType { get; }
 
-        FieldTileStatus Status { get; }
+        FieldTileStatus Status { get; set; }
 
     }
 }

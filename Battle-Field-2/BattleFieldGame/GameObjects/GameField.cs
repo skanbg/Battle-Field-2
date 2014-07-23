@@ -15,7 +15,7 @@
         public GameField(int fieldSize)
         {
             this.FieldSize = fieldSize;
-            this.Field = new IFieldTile[this.FieldSize, this.FieldSize];            
+            this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
             this.MinesCount = this.initialMines;
@@ -78,12 +78,9 @@
         {
             int bombsCount = this.initialMines;
             int placedBombsCount = 0;
-            int mineTypesCount = Enum.GetNames(typeof(MineDetonationType)).Length;   // Gets the number of options in the enumeration
             int currentXCoordinate;
             int currentYCoordinate;
-            MineDetonationType currentMineType;
             IMineTile currentMine;
-            var tileFactory = new FieldTilesFactory();
 
             do
             {
@@ -92,15 +89,26 @@
 
                 if (this.Field[currentXCoordinate, currentYCoordinate] == null)
                 {
-                    currentMineType = (MineDetonationType)rnd.Next(0, mineTypesCount);
-                    currentMine = tileFactory.GetMineTile(currentMineType);
-
+                    currentMine = GameField.GenerateMine();
                     this.Field[currentXCoordinate, currentYCoordinate] = currentMine;
                     placedBombsCount++;
-                    Console.WriteLine(currentXCoordinate + " " + currentYCoordinate + " type: " + currentMineType);
                 }
 
             } while (placedBombsCount < bombsCount);
+        }
+
+        private static IMineTile GenerateMine() // To be replaced by prototype
+        {
+            int mineTypesCount = Enum.GetNames(typeof(MineDetonationType)).Length;   // Gets the number of options in the enumeration
+            MineDetonationType currentMineType;
+            IMineTile currentMine;
+            var tileFactory = new FieldTilesFactory(); // Add interface
+            IDetonationStrategyFactory detonationStrategyFactory = new DetonationStrategyFactory();
+            IMineDetonationStrategy detonationStrategy;
+            currentMineType = (MineDetonationType)rnd.Next(0, mineTypesCount);
+            detonationStrategy = detonationStrategyFactory.GetDetonationStrategy(currentMineType);
+            currentMine = tileFactory.GetMineTile(currentMineType, detonationStrategy);
+            return currentMine;
         }
 
         public static int ReadFieldSize()
@@ -120,6 +128,23 @@
 
         public void DetonateMine(int xCoord, int yCoord)
         {
+            var currentMine = this.Field[xCoord,yCoord] as IMineTile;
+            var explosionTrajectory = currentMine.ExecuteDetonation();
+
+            for (int i = 0; i < explosionTrajectory.Count; i++)
+            {
+                int currentXPos = xCoord + explosionTrajectory[i].X;
+                int currentYPos = yCoord + explosionTrajectory[i].Y;
+
+                if (currentXPos>= 0 && currentXPos < this.FieldSize && currentYPos >= 0 && currentYPos < this.FieldSize)
+                {
+                    Field[currentXPos, currentYPos].Status = FieldTileStatus.Detonated;
+                }
+
+
+
+            }
+
             //switch (Convert.ToInt32(this.Field[xCoord, yCoord]))
             //{
             //    case 1:

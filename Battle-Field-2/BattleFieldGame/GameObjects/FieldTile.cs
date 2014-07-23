@@ -27,7 +27,7 @@ namespace BattleFieldGame.GameObjects
             {
                 return this.status;
             }
-            protected set
+             set
             {
                 this.status = value;
             }
