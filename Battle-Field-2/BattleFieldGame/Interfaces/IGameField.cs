@@ -20,7 +20,6 @@
         IFieldTile[,] Field
         {
             get;
-            set;
         }
 
         //void DetonateMine(int XCoord, int YCoord);
@@ -35,6 +34,6 @@
 
         //void GrymniPetaBomba(int XCoord, int YCoord);
 
-        void DisplayField();
+        //void DisplayField();
     }
 }

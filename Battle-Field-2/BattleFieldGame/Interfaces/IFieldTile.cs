@@ -8,6 +8,5 @@
 
         FieldTileStatus Status { get; }
 
-        void SetStatus(FieldTileStatus status);
     }
 }

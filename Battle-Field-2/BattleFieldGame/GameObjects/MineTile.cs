@@ -26,7 +26,7 @@
 
         public void Detonate(IMineDetonationStrategy strategy)
         {
-            this.SetStatus(FieldTileStatus.Detonated);
+            this.Status = FieldTileStatus.Detonated;
             List<Coords> explosionCoords = strategy.GetExplosionCoordinates();
 
            // Implement detonation strategy

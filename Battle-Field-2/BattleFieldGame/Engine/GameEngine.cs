@@ -27,15 +27,16 @@
             int fieldSize = 10; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
             this.Field = factory.CreateGameField(fieldSize);
             var renderer = new GameFieldConsoleRenderer();
+            renderer.Render(this.Field);
             do
             {
-                int XCoord, YCoord;
+                int xCoord, yCoord;
 
                 do
                 {
-                    XCoord = -1;
-                    YCoord = -1;
-                    Console.Write("Enter coordinates: ");
+                    xCoord = -1;
+                    yCoord = -1;
+                    Console.Write("Enter coordinates of a bomb: ");
                     string coordinates = Console.ReadLine();
                     string[] coords = coordinates.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                     if (coords.Length != 2)
@@ -43,24 +44,24 @@
                         Console.WriteLine("Invalid coordinates!");
                         continue;
                     }
-                    if (!Int32.TryParse(coords[0], out XCoord))
+                    if (!Int32.TryParse(coords[0], out xCoord))
                     {
                         Console.WriteLine("Invalid first coordinate!");
                         continue;
                     }
-                    if (!Int32.TryParse(coords[1], out YCoord))
+                    if (!Int32.TryParse(coords[1], out yCoord))
                     {
                         Console.WriteLine("Invalid second coordinate!");
                         continue;
                     }
 
 
-                    if ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] is EmptyFieldTile))
+                    if ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field.Field[xCoord, yCoord] is EmptyFieldTile))
                     {
                         Console.WriteLine("Invalid Move");
                     }
                 }
-                while ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] is EmptyFieldTile));
+                while ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field.Field[xCoord, yCoord] is EmptyFieldTile));
 
                 //this.Field.DetonateMine(XCoord, YCoord);
                 //this.Field.DisplayField();

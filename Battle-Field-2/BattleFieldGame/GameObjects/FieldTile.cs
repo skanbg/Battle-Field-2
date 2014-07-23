@@ -31,12 +31,6 @@ namespace BattleFieldGame.GameObjects
             {
                 this.status = value;
             }
-        }
-
-        public virtual void SetStatus(FieldTileStatus status)
-        {
-            // Additional validation and actions
-            this.Status = status;
-        }
+        }     
     }
 }

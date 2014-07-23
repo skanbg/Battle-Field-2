@@ -9,7 +9,8 @@
     {
         private const char DetonatedTileSymbol = '*';
         private const char EmptyTileSymbol = '-';
-        public void Render(IGameField field)
+        
+        public void Render(IGameField field) // Refactor -> StringBuilder
         {
             var tiles = field.Field;
 
@@ -73,7 +74,6 @@
                 default:
                     throw new ArgumentException("Invalid mine detonation type!");
             }
-
         }
 
         private char GetEmptyTileSymbol(IFieldTile tile)

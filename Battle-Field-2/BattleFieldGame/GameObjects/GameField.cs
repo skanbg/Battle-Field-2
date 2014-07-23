@@ -41,7 +41,7 @@
         public IFieldTile[,] Field
         {
             get { return this.field; }
-            set { this.field = value; }
+            private set { this.field = value; }
         }
 
         private void GenerateField()
@@ -537,39 +537,39 @@
         //    }
         //}
 
-        public void DisplayField()
-        {
-            ////top side numbers
-            //Console.Write("   ");
-            //for (int i = 0; i < fieldSize; i++)
-            //{
-            //    Console.Write(" " + i.ToString() + "  ");
-            //}
+        //public void DisplayField()
+        //{
+        //    ////top side numbers
+        //    //Console.Write("   ");
+        //    //for (int i = 0; i < fieldSize; i++)
+        //    //{
+        //    //    Console.Write(" " + i.ToString() + "  ");
+        //    //}
 
-            //Console.WriteLine(string.Empty);
-            //Console.Write("    ");
-            //for (int i = 0; i < (4 * fieldSize - 3); i++)
-            //{
-            //    Console.Write("-");
-            //}
+        //    //Console.WriteLine(string.Empty);
+        //    //Console.Write("    ");
+        //    //for (int i = 0; i < (4 * fieldSize - 3); i++)
+        //    //{
+        //    //    Console.Write("-");
+        //    //}
 
-            //Console.WriteLine(string.Empty);
-            ////top side numbers
-            //Console.WriteLine(string.Empty);
+        //    //Console.WriteLine(string.Empty);
+        //    ////top side numbers
+        //    //Console.WriteLine(string.Empty);
 
-            //for (int i = 0; i < fieldSize; i++)
-            //{
-            //    //left side numbers
-            //    Console.Write(i.ToString() + "|");
-            //    for (int j = 0; j < fieldSize; j++)
-            //    {
-            //        Console.Write(" " + this.Field[i, j].ToString());
-            //    }
+        //    //for (int i = 0; i < fieldSize; i++)
+        //    //{
+        //    //    //left side numbers
+        //    //    Console.Write(i.ToString() + "|");
+        //    //    for (int j = 0; j < fieldSize; j++)
+        //    //    {
+        //    //        Console.Write(" " + this.Field[i, j].ToString());
+        //    //    }
 
-            //    Console.WriteLine(string.Empty);
-            //    Console.WriteLine(string.Empty);
-            //    Console.WriteLine(string.Empty);
-            //}
-        }
+        //    //    Console.WriteLine(string.Empty);
+        //    //    Console.WriteLine(string.Empty);
+        //    //    Console.WriteLine(string.Empty);
+        //    //}
+        //}
     }
 }
