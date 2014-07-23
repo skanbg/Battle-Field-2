@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace BattleFieldGame.Interfaces
 {
-    interface IMineDetonationStrategy
+   public interface IMineDetonationStrategy
     {
         List<Coords> GetExplosionCoordinates();
     }

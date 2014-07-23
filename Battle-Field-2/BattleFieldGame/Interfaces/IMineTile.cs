@@ -5,6 +5,6 @@
     {
         MineDetonationType Type { get; }
 
-        void Detonate(IGameField field, IMineDetonationStrategy strategy);
+        void Detonate(IMineDetonationStrategy strategy);
     }
 }

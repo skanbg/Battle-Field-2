@@ -6,23 +6,13 @@ namespace BattleFieldGame.GameObjects
 
     public abstract class FieldTile : IFieldTile
     {
-        private readonly Coords coordinates;
         private readonly FieldTileType type;
         private FieldTileStatus status;
-        protected FieldTile(Coords coords, FieldTileType type)
+        protected FieldTile(FieldTileType type)
         {
-            this.coordinates = coords;
             this.type = type;
         }
             
-        public Coords Coordinates
-        {
-            get
-            {
-                return this.coordinates;
-            }
-        }
-
         public FieldTileType Type
         {
             get

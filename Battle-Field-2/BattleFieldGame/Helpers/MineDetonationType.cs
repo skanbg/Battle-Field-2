@@ -1,6 +1,6 @@
 ﻿namespace BattleFieldGame.Helpers
 {
-    enum MineDetonationType
+   public enum MineDetonationType
     {
         Single,
         Double,

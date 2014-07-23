@@ -4,9 +4,9 @@
 
     class EmptyFieldTile : FieldTile
     {
-        private const FieldTileType Type = FieldTileType.EmptyTile;
-        public EmptyFieldTile(Coords coords)
-            : base(coords, EmptyFieldTile.Type)
+        private new const FieldTileType Type = FieldTileType.EmptyTile;
+        public EmptyFieldTile()
+            : base(EmptyFieldTile.Type)
         {
 
         }
