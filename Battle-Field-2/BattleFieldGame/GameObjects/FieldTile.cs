@@ -6,18 +6,18 @@ namespace BattleFieldGame.GameObjects
 
     public abstract class FieldTile : IFieldTile
     {
-        private readonly FieldTileType type;
+        private readonly FieldTileType tileType;
         private FieldTileStatus status;
         protected FieldTile(FieldTileType type)
         {
-            this.type = type;
+            this.tileType = type;
         }
             
-        public FieldTileType Type
+        public FieldTileType TileType
         {
             get
             {
-                return this.type;
+                return this.tileType;
             }
         }
 

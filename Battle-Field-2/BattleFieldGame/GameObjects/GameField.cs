@@ -24,7 +24,7 @@
 		public int FieldSize
         {
             get { return this.fieldSize; }
-            set { this.fieldSize = value; }
+            private set { this.fieldSize = value; }
         }
 
         public int DetonatedMines

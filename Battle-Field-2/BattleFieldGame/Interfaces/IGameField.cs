@@ -5,7 +5,6 @@
         int FieldSize
         {
             get;
-            set;
         }
 
         int DetonatedMines

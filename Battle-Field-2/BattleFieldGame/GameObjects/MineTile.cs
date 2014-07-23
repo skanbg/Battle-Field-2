@@ -16,7 +16,7 @@
             this.detonationType = detonationType;
         }
 
-        public MineDetonationType Type
+        public MineDetonationType DetonationType
         {
             get
             {

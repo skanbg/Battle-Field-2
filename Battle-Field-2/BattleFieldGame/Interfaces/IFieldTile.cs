@@ -4,7 +4,7 @@
     interface IFieldTile
     {
 
-        FieldTileType Type { get; }
+        FieldTileType TileType { get; }
 
         FieldTileStatus Status { get; }
 
