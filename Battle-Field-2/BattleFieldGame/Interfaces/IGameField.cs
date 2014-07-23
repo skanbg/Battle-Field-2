@@ -23,17 +23,5 @@
         }
 
         void DetonateMine(int xCoord, int yCoord);
-
-        //void DetonateMine1(int XCoord, int YCoord);
-
-        //void DetonateMine2(int XCoord, int YCoord);
-
-        //void DetonateMine3(int XCoord, int YCoord);
-
-        //void DetonateMine4(int XCoord, int YCoord);
-
-        //void GrymniPetaBomba(int XCoord, int YCoord);
-
-        //void DisplayField();
     }
 }

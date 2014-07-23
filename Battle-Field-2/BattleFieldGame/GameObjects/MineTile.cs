@@ -30,7 +30,6 @@
         {
             this.Status = FieldTileStatus.Detonated;
             return this.detonationStrategy.GetExplosionCoordinates();
-           // Implement detonation strategy
         }
     }
 }

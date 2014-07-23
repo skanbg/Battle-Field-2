@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BattleFieldGame.Helpers
+﻿namespace BattleFieldGame.Helpers
 {
     public struct Coords
     {
@@ -27,10 +21,6 @@ namespace BattleFieldGame.Helpers
             }
             set
             {
-                //if (value < 0)
-                //{
-                //    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
-                //}
                 this.yCoord = value;
             }
         }
@@ -43,10 +33,6 @@ namespace BattleFieldGame.Helpers
             }
             set
             {
-                //if (value < 0)
-                //{
-                //    throw new ArgumentOutOfRangeException("Coordinate cannot be a negative value!");
-                //}
                 this.xCoord = value;
             }
         }
