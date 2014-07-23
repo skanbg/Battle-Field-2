@@ -2,7 +2,7 @@
 {
     using BattleFieldGame.Helpers;
 
-    class EmptyFieldTile : FieldTile
+   public class EmptyFieldTile : FieldTile
     {
         private const FieldTileType EmptyTileType = FieldTileType.EmptyTile;
         public EmptyFieldTile()

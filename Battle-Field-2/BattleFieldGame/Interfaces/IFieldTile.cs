@@ -1,7 +1,7 @@
 ﻿namespace BattleFieldGame.Interfaces
 {
     using BattleFieldGame.Helpers;
-    interface IFieldTile
+   public interface IFieldTile
     {
 
         FieldTileType TileType { get; }

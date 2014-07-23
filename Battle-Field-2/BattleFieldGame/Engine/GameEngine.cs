@@ -3,7 +3,7 @@
     using System;
     using BattleFieldGame.Interfaces;
     using BattleFieldGame.Factories;
-
+    using BattleFieldGame.GameObjects;
     public class GameEngine : IGameEngine
     {
         private IGameField field;
@@ -23,7 +23,7 @@
             var factory = Factory.Get();
 
             // initial game field
-            int fieldSize = 5; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
+            int fieldSize = 10; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
             this.Field = factory.CreateGameField(fieldSize);
 
             do
@@ -54,14 +54,14 @@
                     }
 
 
-                    if ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] == " - "))
+                    if ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] is EmptyFieldTile))
                     {
                         Console.WriteLine("Invalid Move");
                     }
                 }
-                while ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] == " - "));
+                while ((XCoord < 0) || (YCoord > fieldSize - 1) || (this.Field.Field[XCoord, YCoord] is EmptyFieldTile));
 
-                this.Field.DetonateMine(XCoord, YCoord);
+                //this.Field.DetonateMine(XCoord, YCoord);
                 this.Field.DisplayField();
             }
             while (this.Field.MinesCount > 0);

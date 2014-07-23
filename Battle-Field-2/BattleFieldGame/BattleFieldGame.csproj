@@ -49,6 +49,7 @@
     <Compile Include="Factories\DetonationStrategyFactory.cs" />
     <Compile Include="Factories\Factory.cs" />
     <Compile Include="Engine\GameEngine.cs" />
+    <Compile Include="Factories\FieldTilesFactory.cs" />
     <Compile Include="Factories\GameFactory.cs" />
     <Compile Include="GameObjects\EmptyFieldTile.cs" />
     <Compile Include="GameObjects\FieldTile.cs" />
