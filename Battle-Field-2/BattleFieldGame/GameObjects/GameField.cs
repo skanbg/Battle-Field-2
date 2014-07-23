@@ -15,11 +15,10 @@
         public GameField(int fieldSize)
         {
             this.FieldSize = fieldSize;
-            this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
-            this.GenerateField();
+            this.Field = new IFieldTile[this.FieldSize, this.FieldSize];            
             this.initialMines = CalculateInitialMinesCount();
+            this.GenerateField();
             this.MinesCount = this.initialMines;
-            this.GenerateMines();
         }
 
         public int FieldSize
@@ -47,18 +46,27 @@
 
         private void GenerateField()
         {
+            PlaceMines();
+            FillEmptyCells();
+        }
+        private void FillEmptyCells()
+        {
+            var tileFactory = new FieldTilesFactory();
+
             for (int i = 0; i < this.FieldSize; i++)
             {
                 for (int j = 0; j < this.FieldSize; j++)
                 {
-
+                    if (this.Field[i, j] == null)
+                    {
+                        this.Field[i, j] = tileFactory.GetEmptyTile();
+                    }
                 }
             }
         }
-
         private int CalculateInitialMinesCount()
         {
-             int cellsCount = this.FieldSize * this.FieldSize;
+            int cellsCount = this.FieldSize * this.FieldSize;
             int minMinesCount = (int)Math.Floor(0.15 * cellsCount);
             int maxMinesCount = (int)Math.Floor(0.3 * cellsCount);
             int minesCount = rnd.Next(minMinesCount, maxMinesCount);
@@ -66,9 +74,9 @@
             return minesCount;
         }
 
-        private void GenerateMines()
+        private void PlaceMines()
         {
-            int bombsCount = this.CalculateInitialMinesCount();
+            int bombsCount = this.initialMines;
             int placedBombsCount = 0;
             int mineTypesCount = Enum.GetNames(typeof(MineDetonationType)).Length;   // Gets the number of options in the enumeration
             int currentXCoordinate;
@@ -82,9 +90,9 @@
                 currentXCoordinate = rnd.Next(0, this.FieldSize);
                 currentYCoordinate = rnd.Next(0, this.FieldSize);
 
-                if (this.Field[currentXCoordinate,currentYCoordinate] == null)
+                if (this.Field[currentXCoordinate, currentYCoordinate] == null)
                 {
-                    currentMineType = (MineDetonationType)rnd.Next(0,mineTypesCount);
+                    currentMineType = (MineDetonationType)rnd.Next(0, mineTypesCount);
                     currentMine = tileFactory.GetMineTile(currentMineType);
 
                     this.Field[currentXCoordinate, currentYCoordinate] = currentMine;
@@ -93,7 +101,6 @@
                 }
 
             } while (placedBombsCount < bombsCount);
-            Console.WriteLine();
         }
 
         public static int ReadFieldSize()
