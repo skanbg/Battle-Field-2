@@ -41,16 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleReadWrite\ConsoleReader.cs" />
     <Compile Include="DetonationStretegies\DoubleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\QuadripleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\QuintupleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\SingleDetonationStrategy.cs" />
     <Compile Include="DetonationStretegies\TripleDetonationStretegy.cs" />
     <Compile Include="Factories\DetonationStrategyFactory.cs" />
-    <Compile Include="Factories\Factory.cs" />
+    <Compile Include="Factories\GameEngineFactory.cs" />
+    <Compile Include="Factories\GameEngineType.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Factories\FieldTilesFactory.cs" />
-    <Compile Include="Factories\GameFactory.cs" />
+    <Compile Include="Factories\GameFieldFactory.cs" />
+    <Compile Include="Factories\GameFieldType.cs" />
     <Compile Include="GameObjects\EmptyFieldTile.cs" />
     <Compile Include="GameObjects\FieldTile.cs" />
     <Compile Include="GameObjects\GameField.cs" />
@@ -59,11 +62,11 @@
     <Compile Include="Helpers\FieldTileStatus.cs" />
     <Compile Include="Helpers\FieldTileType.cs" />
     <Compile Include="Helpers\MineDetonationType.cs" />
+    <Compile Include="Interfaces\IConsoleReader.cs" />
     <Compile Include="Interfaces\IDetonationStrategyFactory.cs" />
     <Compile Include="Interfaces\IFieldTile.cs" />
     <Compile Include="Interfaces\IGameEngine.cs" />
     <Compile Include="Interfaces\IGameField.cs" />
-    <Compile Include="Factories\ObjectFactory.cs" />
     <Compile Include="Interfaces\IGameFieldRenderer.cs" />
     <Compile Include="Interfaces\IMineDetonationStrategy.cs" />
     <Compile Include="Interfaces\IMineTile.cs" />

@@ -2,6 +2,7 @@
 {
     using System;
     using BattleFieldGame.Factories;
+    using BattleFieldGame.Interfaces;
 
     public class Program
     {
@@ -9,9 +10,8 @@
         {
             Console.WriteLine("Welcome to the Battle Field game");
 
-            ObjectFactory factory = new GameFactory();
-
-            var gameEngine = Factory.Get().CreateGameEngine();
+            GameEngineFactory gameEngineFactory = new GameEngineFactory();
+            IGameEngine gameEngine = gameEngineFactory.GetGameEngine(GameEngineType.Keyboard);
             gameEngine.Start();
         }
     }

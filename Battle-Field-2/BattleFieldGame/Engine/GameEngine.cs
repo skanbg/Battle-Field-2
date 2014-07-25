@@ -21,11 +21,11 @@
 
         public void Start()
         {
-            var factory = Factory.Get();
+            GameFieldFactory gameFieldFactory = new GameFieldFactory();
 
             // initial game field
             int fieldSize = 10; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
-            this.Field = factory.CreateGameField(fieldSize);
+            this.Field = gameFieldFactory.GetGameField(fieldSize);
             var renderer = new GameFieldConsoleRenderer();
             renderer.Render(this.Field);
             do
