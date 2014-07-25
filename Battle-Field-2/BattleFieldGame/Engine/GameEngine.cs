@@ -5,6 +5,7 @@
     using BattleFieldGame.Factories;
     using BattleFieldGame.GameObjects;
     using BattleFieldGame.Renderer;
+
     public class GameEngine : IGameEngine
     {
         private IGameField field;
@@ -28,6 +29,7 @@
             this.Field = gameFieldFactory.GetGameField(fieldSize);
             var renderer = new GameFieldConsoleRenderer();
             renderer.Render(this.Field);
+
             do
             {
                 int xCoord, yCoord;
