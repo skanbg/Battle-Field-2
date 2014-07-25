@@ -1,25 +1,14 @@
 ﻿namespace BattleFieldGame
 {
-    using BattleFieldGame.Interfaces;
+    using BattleFieldGame.Keyboard;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    public class ConsoleReader : IConsoleReader
+    public class ConsoleReader : IReader
     {
-        public string[] ReadLine()
+        public string Read()
         {
             string line = Console.ReadLine();
-            return line.Split(' ');
-        }
-
-        public int[] ReadCoordinates()
-        {
-            string[] lineTokens = this.ReadLine();
-            int[] parsedCoordinates = lineTokens.Select(x => int.Parse(x)).ToArray();
-            return parsedCoordinates;
+            return line;
         }
     }
 }
