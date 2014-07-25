@@ -5,13 +5,17 @@
     using BattleFieldGame.Factories;
     using BattleFieldGame.GameObjects;
     using BattleFieldGame.Renderer;
+    using BattleFieldGame.Keyboard;
 
     public class GameEngine : IGameEngine
     {
         private IGameField field;
+        private ICommandReader commandReader;
+
 
         public GameEngine()
         {
+            this.commandReader = new CommandReader(new ConsoleReader());
         }
 
         public IGameField Field
@@ -25,7 +29,7 @@
             GameFieldFactory gameFieldFactory = new GameFieldFactory();
 
             // initial game field
-            int fieldSize = 10; //TODO: create better whey to read field size!  //GameField.ReadFieldSize();
+            int fieldSize = GetFieldSize();
             this.Field = gameFieldFactory.GetGameField(fieldSize);
             var renderer = new GameFieldConsoleRenderer();
             renderer.Render(this.Field);
@@ -72,6 +76,45 @@
 
             Console.WriteLine("Game Over. Detonated Mines: " + this.Field.DetonatedMines);
             Console.ReadKey();
+        }
+
+        private int GetFieldSize()
+        {
+            int size = 0;
+            
+            while (true)
+            {
+                size = GetInputSize();
+
+                // size is valid
+                if (1 <= size && size <= 10)
+                {
+                    break;
+                }
+                else
+                {
+                    // TODO: Aletr user for invalid input and try again to input.
+                }
+
+            }
+
+            return size;
+        }
+
+        private int GetInputSize()
+        {
+            int size = 0;
+
+            try
+            {
+                size = this.commandReader.GetFieldSize();
+            }
+            catch (ArgumentException)
+            {
+                //TODO: Alert user
+            }
+
+            return size;
         }
     }
 }

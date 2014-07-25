@@ -10,3 +10,9 @@ E:\Telerik\TeamWork\Battle-Field-2\trunk\Battle-Field-2\BattleFieldGame\obj\Debu
 E:\Telerik\TeamWork\Battle-Field-2\trunk\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe
 E:\Telerik\TeamWork\Battle-Field-2\trunk\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.pdb
 E:\Telerik\TeamWork\Battle-Field-2\trunk\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Desktop\BattleFieldGame\bin\Debug\BattleFieldGame.exe.config
+C:\Users\Gencho\Desktop\BattleFieldGame\obj\Debug\BattleFieldGame.exe
+C:\Users\Gencho\Desktop\BattleFieldGame\bin\Debug\BattleFieldGame.exe
+C:\Users\Gencho\Desktop\BattleFieldGame\bin\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Desktop\BattleFieldGame\obj\Debug\BattleFieldGame.csprojResolveAssemblyReference.cache
+C:\Users\Gencho\Desktop\BattleFieldGame\obj\Debug\BattleFieldGame.pdb

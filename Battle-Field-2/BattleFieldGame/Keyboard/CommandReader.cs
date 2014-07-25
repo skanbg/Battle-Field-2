@@ -21,9 +21,12 @@
             return this.ReadCommand();
         }
 
-        public int[] GetFieldDimentions()
+        public int GetFieldSize()
         {
-            return this.ReadCommand();
+            string input = this.reader.Read();
+            int size = int.Parse(input);
+
+            return size;
         }
 
         private int[] ReadCommand()
