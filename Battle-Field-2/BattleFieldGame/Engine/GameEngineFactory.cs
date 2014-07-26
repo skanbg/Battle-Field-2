@@ -1,5 +1,7 @@
 ﻿namespace BattleFieldGame.Engine
 {
+    using BattleFieldGame.Keyboard;
+    using BattleFieldGame.Keyboard.ConsoleIO;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -13,17 +15,14 @@
             switch (gameEngineType)
             {
                 case GameEngineType.Keyboard:
-                    return new GameEngine();
-                    break;
+
+                    return new GameEngine(new CommandReader(new ConsoleReader()), new ConsoleWriter());
                 case GameEngineType.Mouse:
                     throw new NotImplementedException();
-                    break;
                 case GameEngineType.Touch:
                     throw new NotImplementedException();
-                    break;
                 default:
                     throw new ArgumentException();
-                    break;
             }
         }
     }

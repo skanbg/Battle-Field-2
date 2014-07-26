@@ -10,16 +10,27 @@
     {
         private IGameField field;
         private ICommandReader commandReader;
-        private ConsoleWriter render;
+        private IConsoleWriter render;
 
-        public GameEngine()
+        public GameEngine(ICommandReader commandReader, IConsoleWriter render)
         {
+            if (commandReader == null)
+            {
+                throw new ArgumentNullException("commandReader can not be null");
+            }
+
+            if (render == null)
+            {
+                throw new ArgumentNullException("render can not be null");
+            }
+
             this.commandReader = new CommandReader(new ConsoleReader());
+            this.render = render;
+
             GameFieldFactory gameFieldFactory = new GameFieldFactory();
 
             int fieldSize = this.GetFieldSize();
             this.field = gameFieldFactory.GetGameField(fieldSize);
-            this.render = new ConsoleWriter();
         }
 
         /// <summary>
