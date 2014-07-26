@@ -8,6 +8,7 @@ namespace BattleFieldGame.GameObjects
     {
         private readonly FieldTileType tileType;
         private FieldTileStatus status;
+
         protected FieldTile(FieldTileType type)
         {
             this.tileType = type;

@@ -10,7 +10,6 @@
         private int detonatedMines;
         private int fieldSize;
         private readonly int initialMines;
-        //private int minesCount;
         private IFieldTile[,] field;
         private static readonly Random rnd = new Random();
 
@@ -20,7 +19,6 @@
             this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
-            //this.MinesCount = this.initialMines;
             this.detonatedMines = 0;
         }
 
@@ -74,6 +72,10 @@
             PlaceMines();
             FillEmptyCells();
         }
+
+        /// <summary>
+        /// Places empty tiles on the field.
+        /// </summary>
         private void FillEmptyCells()
         {
             var tileFactory = new FieldTilesFactory();
@@ -89,6 +91,11 @@
                 }
             }
         }
+
+        /// <summary>
+        /// Calculates the number of initial mines on the field.
+        /// </summary>
+        /// <returns>The number of initial mines.</returns>
         private int CalculateInitialMinesCount()
         {
             int cellsCount = this.FieldSize * this.FieldSize;
@@ -99,6 +106,9 @@
             return minesCount;
         }
 
+        /// <summary>
+        /// Places mines on the field.
+        /// </summary>
         private void PlaceMines()
         {
             int bombsCount = this.initialMines;
@@ -122,6 +132,10 @@
             } while (placedBombsCount < bombsCount);
         }
 
+        /// <summary>
+        /// Creates a single mine with detonation type and strategy.
+        /// </summary>
+        /// <returns>The mine tile</returns>
         private static IMineTile GenerateMine() // To be replaced by prototype
         {
             int mineTypesCount = Enum.GetNames(typeof(MineDetonationType)).Length;   // Gets the number of options in the enumeration
@@ -136,6 +150,10 @@
             return currentMine;
         }
 
+        /// <summary>
+        /// Gets the size of the field and validates it.
+        /// </summary>
+        /// <returns>The size of the field</returns> //TODO check for repetiotion with GetFieldSize()
         public static int ReadFieldSize()
         {
             bool isFieldSizeCorrect = false;
@@ -151,6 +169,13 @@
             return fieldSize;
         }
 
+        /// <summary>
+        /// Detonates a mine according to the given coords
+        /// and increases the number of detonated mines 
+        /// each time it succeeds.
+        /// </summary>
+        /// <param name="xCoord">The xCoord of the mine</param>
+        /// <param name="yCoord">The yCoord of the mine</param>
         public void DetonateMine(int xCoord, int yCoord)
         {
             var currentMine = this.Field[xCoord,yCoord] as IMineTile;
