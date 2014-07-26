@@ -5,5 +5,7 @@
     public interface IConsoleWriter
     {
         void WriteField(IGameField field);
+
+        void WriteMessage(string message);
     }
 }
