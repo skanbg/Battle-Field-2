@@ -69,7 +69,7 @@
 
         public void WriteMessage(string message)
         {
-            Console.WriteLine(message);
+            Console.Write(message);
         }
 
         private char GetTileSymbol(IFieldTile tile)
