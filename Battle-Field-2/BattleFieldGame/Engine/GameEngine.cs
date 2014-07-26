@@ -1,10 +1,10 @@
 ﻿namespace BattleFieldGame.Engine
 {
     using System;
-    using BattleFieldGame.DetonationStretegies;
+
     using BattleFieldGame.GameObjects;
-    using BattleFieldGame.Keyboard.ConsoleIO;
     using BattleFieldGame.Keyboard;
+    using BattleFieldGame.Keyboard.ConsoleIO;
 
     public class GameEngine : IGameEngine
     {
@@ -17,7 +17,7 @@
             this.commandReader = new CommandReader(new ConsoleReader());
             GameFieldFactory gameFieldFactory = new GameFieldFactory();
 
-            int fieldSize = GetFieldSize();
+            int fieldSize = this.GetFieldSize();
             this.field = gameFieldFactory.GetGameField(fieldSize);
             this.render = new ConsoleWriter();
         }
@@ -27,11 +27,11 @@
         /// </summary>
         public void StartBattleFieldGame()
         {
-            this.render.WriteField(field);
+            this.render.WriteField(this.field);
 
-            RedrawField();
+            this.RedrawField();
 
-            Console.WriteLine("Game Over. Detonated Mines: " + field.DetonatedMines);
+            Console.WriteLine("Game Over. Detonated Mines: " + this.field.DetonatedMines);
             Console.ReadKey();
         }
 
@@ -46,10 +46,10 @@
         {
             do
             {
-                int[] coords = GetMoveCoordinates();
+                int[] coords = this.GetMoveCoordinates();
 
-                field.DetonateMine(coords[0], coords[1]);
-                this.render.WriteField(field);
+                this.field.DetonateMine(coords[0], coords[1]);
+                this.render.WriteField(this.field);
             }
             while (this.field.MinesCount > 0);
         }
@@ -70,7 +70,7 @@
                 Console.Write("Enter coordinates of a bomb: ");
                 try
                 {
-                    coords = commandReader.GetCordinates();
+                    coords = this.commandReader.GetCordinates();
                 }
                 catch (Exception)
                 {
@@ -78,13 +78,12 @@
                     coords = new int[] { -1, -1 };
                 }
 
-
-                isXValid = IsValueInRange(coords[0], 0, this.field.FieldSize - 1);
-                isYValid = IsValueInRange(coords[1], 0, this.field.FieldSize - 1);
+                isXValid = this.IsValueInRange(coords[0], 0, this.field.FieldSize - 1);
+                isYValid = this.IsValueInRange(coords[1], 0, this.field.FieldSize - 1);
 
                 if (isXValid && isYValid)
                 {
-                    isEmptyFieldTile = !(field[coords[0], coords[1]] is EmptyFieldTile);
+                    isEmptyFieldTile = !(this.field[coords[0], coords[1]] is EmptyFieldTile);
 
                     if (isEmptyFieldTile)
                     {
