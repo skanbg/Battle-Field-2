@@ -42,8 +42,7 @@
 
             this.RedrawField();
 
-            Console.WriteLine("Game Over. Detonated Mines: " + this.field.DetonatedMines);
-            Console.ReadKey();
+            this.render.WriteMessage("Game Over. Detonated Mines: " + this.field.DetonatedMines);
         }
 
         /// <summary>
@@ -78,7 +77,7 @@
 
             while (true)
             {
-                Console.Write("Enter coordinates of a bomb: ");
+                this.render.WriteMessage("Enter coordinates of a bomb: ");
                 try
                 {
                     coords = this.commandReader.GetCordinates();
@@ -102,7 +101,7 @@
                     }
                 }
 
-                Console.WriteLine("Invalid bomb coordinates!");
+                this.render.WriteMessage("Invalid bomb coordinates!");
             }
 
             return coords;
@@ -135,7 +134,7 @@
 
             while (true)
             {
-                Console.Write("Enter field size: ");
+                this.render.WriteMessage("Enter field size: ");
 
                 try
                 {
@@ -153,7 +152,7 @@
                 }
                 else
                 {
-                    Console.WriteLine("The size of the field must be greater than 1 and less than 10 (including!)");
+                    this.render.WriteMessage("The size of the field must be greater than 1 and less than 10 (including!)");
                 }
             }
 

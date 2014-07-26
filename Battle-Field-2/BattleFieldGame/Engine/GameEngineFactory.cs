@@ -1,12 +1,8 @@
 ﻿namespace BattleFieldGame.Engine
 {
+    using System;
     using BattleFieldGame.Keyboard;
     using BattleFieldGame.Keyboard.ConsoleIO;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class GameEngineFactory
     {
@@ -15,7 +11,6 @@
             switch (gameEngineType)
             {
                 case GameEngineType.Keyboard:
-
                     return new GameEngine(new CommandReader(new ConsoleReader()), new ConsoleWriter());
                 case GameEngineType.Mouse:
                     throw new NotImplementedException();
