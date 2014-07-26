@@ -6,9 +6,10 @@
     using BattleFieldGame.Factories;
     public class GameField : IGameField
     {
+        private int detonatedMines;
         private int fieldSize;
         private readonly int initialMines;
-        private int minesCount;
+        //private int minesCount;
         private IFieldTile[,] field;
         private static readonly Random rnd = new Random();
 
@@ -18,7 +19,8 @@
             this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
-            this.MinesCount = this.initialMines;
+            //this.MinesCount = this.initialMines;
+            this.detonatedMines = 0;
         }
 
         public IFieldTile this[int row, int col]    // Indexer declaration
@@ -51,13 +53,13 @@
 
         public int DetonatedMines
         {
-            get { return this.initialMines - this.MinesCount; }
+            get { return this.detonatedMines; }
+            private set { this.detonatedMines = value; }
         }
 
         public int MinesCount
         {
-            get { return this.minesCount; }
-            private set { this.minesCount = value; }
+            get { return this.initialMines - this.DetonatedMines; }
         }
 
         private IFieldTile[,] Field
@@ -152,6 +154,8 @@
         {
             var currentMine = this.Field[xCoord,yCoord] as IMineTile;
             var explosionTrajectory = currentMine.ExecuteDetonation();
+            // count hte mine that exploded
+            this.DetonatedMines++;
 
             for (int i = 0; i < explosionTrajectory.Count; i++)
             {
@@ -160,7 +164,14 @@
 
                 if (currentXPos>= 0 && currentXPos < this.FieldSize && currentYPos >= 0 && currentYPos < this.FieldSize)
                 {
-                    Field[currentXPos, currentYPos].Status = FieldTileStatus.Detonated;
+                    var currentFieldTile = Field[currentXPos, currentYPos];
+                    currentFieldTile.Status = FieldTileStatus.Detonated;
+
+                    if (currentFieldTile.TileType == FieldTileType.MineTile)
+                    {
+                        // count the mines that have been destroyed by the explosion trajectory
+                        this.DetonatedMines++;
+                    }
                 }
             }       
         }
