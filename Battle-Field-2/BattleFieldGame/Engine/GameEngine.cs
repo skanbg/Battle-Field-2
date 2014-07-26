@@ -77,40 +77,26 @@
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Checks if the size of the field, entered by the user, is between 1 and 10.
+        /// </summary>
+        /// <returns>Valid size of the field</returns>
         private int GetFieldSize()
         {
             int size = 0;
             
             while (true)
             {
-                size = GetInputSize();
+                size = this.commandReader.GetFieldSize();
 
-                // size is valid
                 if (1 <= size && size <= 10)
                 {
                     break;
                 }
                 else
                 {
-                    // TODO: Aletr user for invalid input and try again to input.
+                    Console.WriteLine("The size of the field must be greater than 1 and less than 10 (including!)");
                 }
-
-            }
-
-            return size;
-        }
-
-        private int GetInputSize()
-        {
-            int size = 0;
-
-            try
-            {
-                size = this.commandReader.GetFieldSize();
-            }
-            catch (ArgumentException)
-            {
-                //TODO: Alert user
             }
 
             return size;
