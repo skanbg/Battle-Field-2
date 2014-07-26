@@ -1,7 +1,7 @@
 ﻿namespace BattleFieldGame.Engine
 {
     using System;
-    using BattleFieldGame.Factories;
+    using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.GameObjects;
     using BattleFieldGame.Keyboard.ConsoleIO;
     using BattleFieldGame.Keyboard;

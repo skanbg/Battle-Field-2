@@ -1,9 +1,10 @@
 ﻿namespace BattleFieldGame.GameObjects
 {
     using System;
+    using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.Interfaces;
     using BattleFieldGame.Helpers;
-    using BattleFieldGame.Factories;
+
     public class GameField : IGameField
     {
         private int detonatedMines;
