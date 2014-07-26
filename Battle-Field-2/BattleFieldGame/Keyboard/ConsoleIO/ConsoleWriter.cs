@@ -1,6 +1,7 @@
 ﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
     using System;
+    using System.Text;
     using BattleFieldGame.GameObjects;
     using BattleFieldGame.Helpers;
 
@@ -11,28 +12,59 @@
 
         public void WriteField(IGameField field) // Refactor -> StringBuilder
         {
+            StringBuilder result = new StringBuilder();
+
             for (int i = 0; i < field.GetRowsCount(); i++)
             {
                 if (i == 0)
                 {
-                    Console.Write("   " + i + " ");
+                    result.Append("   " + i + " ");
                     continue;
                 }
-                Console.Write(" " + i + " ");
+
+                result.Append(" " + i + " ");
             }
-            Console.WriteLine();
-            Console.WriteLine();
+
+            result.AppendLine();
+            result.AppendLine();
 
             for (int i = 0; i < field.GetRowsCount(); i++)
             {
-                Console.Write(i + " ");
+                result.Append(i + " ");
+
                 for (int j = 0; j < field.GetColumnsCount(); j++)
                 {
                     var item = field[i, j];
-                    Console.Write(" " + GetTileSymbol(item) + " ");
+                    result.Append(" " + GetTileSymbol(item) + " ");
                 }
-                Console.WriteLine();
+
+                result.AppendLine();
             }
+
+            Console.WriteLine(result.ToString());
+
+            //for (int i = 0; i < field.GetRowsCount(); i++)
+            //{
+            //    if (i == 0)
+            //    {
+            //        Console.Write("   " + i + " ");
+            //        continue;
+            //    }
+            //    Console.Write(" " + i + " ");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+            //for (int i = 0; i < field.GetRowsCount(); i++)
+            //{
+            //    Console.Write(i + " ");
+            //    for (int j = 0; j < field.GetColumnsCount(); j++)
+            //    {
+            //        var item = field[i, j];
+            //        Console.Write(" " + GetTileSymbol(item) + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
         }
 
         public void WriteMessage(string message)
