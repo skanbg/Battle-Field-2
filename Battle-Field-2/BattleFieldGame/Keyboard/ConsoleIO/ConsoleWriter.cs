@@ -35,6 +35,10 @@
             }
         }
 
+        public void WriteMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
 
         private char GetTileSymbol(IFieldTile tile)
         {
@@ -109,5 +113,8 @@
         //    Console.WriteLine(string.Empty);
         //    Console.WriteLine(string.Empty);
         //}
+
+
+        
     }
 }
