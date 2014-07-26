@@ -28,7 +28,7 @@
 
         /// <summary>
         /// Detonates a mine according to its strategy 
-        /// and sets it status on the field to detonated.
+        /// and sets its status on the field to detonated.
         /// </summary>
         /// <returns>The coords for detonation</returns>
         public List<Coords> ExecuteDetonation()
