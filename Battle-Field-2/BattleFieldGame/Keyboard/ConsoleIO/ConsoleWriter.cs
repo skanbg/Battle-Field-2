@@ -18,11 +18,11 @@
             {
                 if (i == 0)
                 {
-                    result.Append("   " + i + " ");
+                    result.AppendFormat(String.Format("   {0} ", i));
                     continue;
                 }
 
-                result.Append(" " + i + " ");
+                result.AppendFormat(String.Format(" {0} ", i));
             }
 
             result.AppendLine();
@@ -30,12 +30,12 @@
 
             for (int i = 0; i < field.GetRowsCount(); i++)
             {
-                result.Append(i + " ");
+                result.AppendFormat(string.Format("{0} ", i));
 
                 for (int j = 0; j < field.GetColumnsCount(); j++)
                 {
                     var item = field[i, j];
-                    result.Append(" " + GetTileSymbol(item) + " ");
+                    result.AppendFormat(string.Format(" {0} ", GetTileSymbol(item)));
                 }
 
                 result.AppendLine();
