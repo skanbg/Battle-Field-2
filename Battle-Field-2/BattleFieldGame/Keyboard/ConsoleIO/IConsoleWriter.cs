@@ -1,7 +1,9 @@
-﻿namespace BattleFieldGame.Interfaces
+﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
-    public interface IGameFieldRenderer
+    using BattleFieldGame.GameObjects;
+
+    public interface IConsoleWriter
     {
-        void Render(IGameField field);
+        void WriteField(IGameField field);
     }
 }

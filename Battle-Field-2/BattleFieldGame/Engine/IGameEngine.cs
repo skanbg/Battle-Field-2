@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame.Interfaces
+﻿namespace BattleFieldGame.Engine
 {
     public interface IGameEngine
     {

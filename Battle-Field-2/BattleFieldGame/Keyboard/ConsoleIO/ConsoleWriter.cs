@@ -1,20 +1,17 @@
-﻿namespace BattleFieldGame.Renderer
+﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
     using System;
     using BattleFieldGame.GameObjects;
-    using BattleFieldGame.Interfaces;
     using BattleFieldGame.Helpers;
 
-    public class GameFieldConsoleRenderer : IGameFieldRenderer
+    public class ConsoleWriter : IConsoleWriter
     {
         private const char DetonatedTileSymbol = '*';
         private const char EmptyTileSymbol = '-';
-        
-        public void Render(IGameField field) // Refactor -> StringBuilder
-        {
-            var tiles = field.Field;
 
-            for (int i = 0; i < tiles.GetLength(0); i++)
+        public void WriteField(IGameField field) // Refactor -> StringBuilder
+        {
+            for (int i = 0; i < field.GetRowsCount(); i++)
             {
                 if (i == 0)
                 {
@@ -26,12 +23,12 @@
             Console.WriteLine();
             Console.WriteLine();
 
-            for (int i = 0; i < tiles.GetLength(0); i++)
+            for (int i = 0; i < field.GetRowsCount(); i++)
             {
                 Console.Write(i + " ");
-                for (int j = 0; j < tiles.GetLength(1); j++)
+                for (int j = 0; j < field.GetColumnsCount(); j++)
                 {
-                    var item = tiles[i, j];
+                    var item = field[i, j];
                     Console.Write(" " + GetTileSymbol(item) + " ");
                 }
                 Console.WriteLine();
@@ -43,7 +40,7 @@
         {
             if (tile.Status == FieldTileStatus.Detonated)
             {
-                return GameFieldConsoleRenderer.DetonatedTileSymbol;
+                return ConsoleWriter.DetonatedTileSymbol;
             }
 
             switch (tile.TileType)
@@ -78,7 +75,7 @@
 
         private char GetEmptyTileSymbol(IFieldTile tile)
         {
-            return GameFieldConsoleRenderer.EmptyTileSymbol;
+            return ConsoleWriter.EmptyTileSymbol;
         }
 
         ////top side numbers

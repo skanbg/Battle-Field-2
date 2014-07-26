@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame.Factories
+﻿namespace BattleFieldGame.GameObjects
 {
     using BattleFieldGame.Interfaces;
     using BattleFieldGame.GameObjects;

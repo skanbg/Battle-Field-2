@@ -21,6 +21,28 @@
             this.MinesCount = this.initialMines;
         }
 
+        public IFieldTile this[int row, int col]    // Indexer declaration
+        {
+            get
+            {
+                return this.Field[row, col];
+            }
+            private set
+            {
+                this.Field[row, col] = value;
+            }
+        }
+
+        public int GetColumnsCount()
+        {
+            return this.Field.GetLength(1);
+        }
+
+        public int GetRowsCount()
+        {
+            return this.Field.GetLength(0);
+        }
+
         public int FieldSize
         {
             get { return this.fieldSize; }
@@ -38,10 +60,10 @@
             private set { this.minesCount = value; }
         }
 
-        public IFieldTile[,] Field
+        private IFieldTile[,] Field
         {
             get { return this.field; }
-            private set { this.field = value; }
+            set { this.field = value; }
         }
 
         private void GenerateField()

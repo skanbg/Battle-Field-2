@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame.Interfaces
+﻿namespace BattleFieldGame.GameObjects
 {
     using BattleFieldGame.Helpers;
     using System.Collections.Generic;

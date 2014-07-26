@@ -1,13 +1,11 @@
-﻿using BattleFieldGame.Engine;
-using BattleFieldGame.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BattleFieldGame.Factories
+﻿namespace BattleFieldGame.Engine
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public class GameEngineFactory
     {
         public IGameEngine GetGameEngine(GameEngineType gameEngineType = GameEngineType.Keyboard)

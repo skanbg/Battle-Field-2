@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame.Interfaces
+﻿namespace BattleFieldGame.GameObjects
 {
     public interface IGameField
     {
@@ -17,9 +17,14 @@
             get;
         }
 
-        IFieldTile[,] Field
+        int GetRowsCount();
+
+        int GetColumnsCount();
+
+        IFieldTile this[int col, int row]
         {
             get;
+            //set; Uncomment if you need public setter
         }
 
         void DetonateMine(int xCoord, int yCoord);

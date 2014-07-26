@@ -1,10 +1,9 @@
 ﻿namespace BattleFieldGame.Engine
 {
     using System;
-    using BattleFieldGame.Interfaces;
     using BattleFieldGame.Factories;
     using BattleFieldGame.GameObjects;
-    using BattleFieldGame.Renderer;
+    using BattleFieldGame.Keyboard.ConsoleIO;
     using BattleFieldGame.Keyboard;
 
     public class GameEngine : IGameEngine
@@ -31,8 +30,8 @@
             // initial game field
             int fieldSize = GetFieldSize();
             this.Field = gameFieldFactory.GetGameField(fieldSize);
-            var renderer = new GameFieldConsoleRenderer();
-            renderer.Render(this.Field);
+            var renderer = new ConsoleWriter();
+            renderer.WriteField(this.Field);
 
             do
             {
@@ -62,15 +61,15 @@
                     }
 
 
-                    if ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field.Field[xCoord, yCoord] is EmptyFieldTile))
+                    if ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field[xCoord, yCoord] is EmptyFieldTile))
                     {
                         Console.WriteLine("Invalid Move");
                     }
                 }
-                while ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field.Field[xCoord, yCoord] is EmptyFieldTile));
+                while ((xCoord < 0) || (yCoord > fieldSize - 1) || (this.Field[xCoord, yCoord] is EmptyFieldTile));
 
                 this.Field.DetonateMine(xCoord, yCoord);
-                renderer.Render(this.Field);
+                renderer.WriteField(this.Field);
             }
             while (this.Field.MinesCount > 0);
 
