@@ -11,7 +11,7 @@
 
             GameEngineFactory gameEngineFactory = new GameEngineFactory();
             IGameEngine gameEngine = gameEngineFactory.GetGameEngine(GameEngineType.Keyboard);
-            gameEngine.Start();
+            gameEngine.StartBattleFieldGame();
         }
     }
 }
