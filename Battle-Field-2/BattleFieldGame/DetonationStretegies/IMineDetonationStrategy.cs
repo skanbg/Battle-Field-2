@@ -1,8 +1,9 @@
-﻿using BattleFieldGame.Helpers;
-using System.Collections.Generic;
-namespace BattleFieldGame.Interfaces
+﻿namespace BattleFieldGame.Interfaces
 {
-   public interface IMineDetonationStrategy
+    using BattleFieldGame.Helpers;
+    using System.Collections.Generic;
+
+    public interface IMineDetonationStrategy
     {
         List<Coords> GetExplosionCoordinates();
     }
