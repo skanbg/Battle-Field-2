@@ -10,16 +10,16 @@
     {
         private IGameField field;
         private ICommandReader commandReader;
+        private ConsoleWriter render;
 
         public GameEngine()
         {
             this.commandReader = new CommandReader(new ConsoleReader());
-        }
+            GameFieldFactory gameFieldFactory = new GameFieldFactory();
 
-        public IGameField Field
-        {
-            get { return this.field; }
-            set { this.field = value; }
+            int fieldSize = GetFieldSize();
+            this.field = gameFieldFactory.GetGameField(fieldSize);
+            this.render = new ConsoleWriter();
         }
 
         /// <summary>
@@ -27,13 +27,9 @@
         /// </summary>
         public void StartBattleFieldGame()
         {
-            GameFieldFactory gameFieldFactory = new GameFieldFactory();
-            int fieldSize = GetFieldSize();
-            field = gameFieldFactory.GetGameField(fieldSize);
-            var renderer = new ConsoleWriter();
-            renderer.WriteField(field);
+            this.render.WriteField(field);
 
-            RedrawField(field, fieldSize, renderer);
+            RedrawField();
 
             Console.WriteLine("Game Over. Detonated Mines: " + field.DetonatedMines);
             Console.ReadKey();
@@ -46,50 +42,77 @@
         /// <param name="field">the field with its coords</param>
         /// <param name="fieldSize">the specified field size</param>
         /// <param name="renderer">draws the field on the screen</param>
-        public void RedrawField(IGameField field, int fieldSize, ConsoleWriter renderer)
+        public void RedrawField()
         {
             do
             {
-                int xCoord, yCoord;
+                int[] coords = GetMoveCoordinates();
 
-                do
+                field.DetonateMine(coords[0], coords[1]);
+                this.render.WriteField(field);
+            }
+            while (this.field.MinesCount > 0);
+        }
+
+        /// <summary>
+        /// Get player next move.
+        /// </summary>
+        /// <returns>Array of two numbers arr[0] is ROW coord arr[1] is COL coord</returns>
+        private int[] GetMoveCoordinates()
+        {
+            int[] coords;
+            bool isXValid;
+            bool isYValid;
+            bool isEmptyFieldTile;
+
+            while (true)
+            {
+                Console.Write("Enter coordinates of a bomb: ");
+                try
                 {
-                    xCoord = -1;
-                    yCoord = -1;
+                    coords = commandReader.GetCordinates();
+                }
+                catch (Exception)
+                {
+                    // set invalid coords.
+                    coords = new int[] { -1, -1 };
+                }
 
-                    Console.Write("Enter coordinates of a bomb: ");
-                    string coordinates = Console.ReadLine();
-                    string[] coords = coordinates.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                    if (coords.Length != 2)
+                isXValid = IsValueInRange(coords[0], 0, this.field.FieldSize - 1);
+                isYValid = IsValueInRange(coords[1], 0, this.field.FieldSize - 1);
+
+                if (isXValid && isYValid)
+                {
+                    isEmptyFieldTile = !(field[coords[0], coords[1]] is EmptyFieldTile);
+
+                    if (isEmptyFieldTile)
                     {
-                        Console.WriteLine("Invalid coordinates!");
-                        continue;
-                    }
-
-                    if (!Int32.TryParse(coords[0], out xCoord))
-                    {
-                        Console.WriteLine("Invalid first coordinate!");
-                        continue;
-                    }
-
-                    if (!Int32.TryParse(coords[1], out yCoord))
-                    {
-                        Console.WriteLine("Invalid second coordinate!");
-                        continue;
-                    }
-
-                    if ((xCoord < 0) || (yCoord > fieldSize - 1) || (field[xCoord, yCoord] is EmptyFieldTile))
-                    {
-                        Console.WriteLine("Invalid Move");
+                        break;
                     }
                 }
-                while ((xCoord < 0) || (yCoord > fieldSize - 1) || (field[xCoord, yCoord] is EmptyFieldTile));
 
-                field.DetonateMine(xCoord, yCoord);
-                renderer.WriteField(field);
+                Console.WriteLine("Invalid bomb coordinates!");
             }
-            while (this.Field.MinesCount > 0);
+
+            return coords;
+        }
+
+        /// <summary>
+        /// Check value is in ramge min max.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns>true if value is in range</returns>
+        private bool IsValueInRange(int value, int min, int max)
+        {
+            if (min <= value && value <= max)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -99,10 +122,20 @@
         private int GetFieldSize()
         {
             int size = 0;
-            
+
             while (true)
             {
-                size = this.commandReader.GetFieldSize();
+                Console.Write("Enter field size: ");
+
+                try
+                {
+                    size = this.commandReader.GetFieldSize();
+                }
+                catch (Exception)
+                {
+                    // set invalid size bocouse size is invalid.
+                    size = -1;
+                }
 
                 if (1 <= size && size <= 10)
                 {

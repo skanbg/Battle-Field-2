@@ -22,3 +22,9 @@ F:\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGam
 F:\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe
 F:\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.pdb
 F:\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.csprojResolveAssemblyReference.cache
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe.config
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.exe
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.csprojResolveAssemblyReference.cache
