@@ -8,13 +8,24 @@
     public class DetonationStrategyFactory : IDetonationStrategyFactory
     {
         private static IDictionary<MineDetonationType, IMineDetonationStrategy> generatedMines;
+
+        /// <summary>
+        /// Creates the generated mines by thier type and strategy of detonation.
+        /// </summary>
         public DetonationStrategyFactory()
         {
             DetonationStrategyFactory.generatedMines = new Dictionary<MineDetonationType, IMineDetonationStrategy>();
         }
+
+        /// <summary>
+        /// Checks for a detonation strategy and generates mines according to its type.
+        /// </summary>
+        /// <param name="detonationType"></param>
+        /// <returns>Returns the strategy of detonation.</returns>
         public IMineDetonationStrategy GetDetonationStrategy(MineDetonationType detonationType)
         {
             IMineDetonationStrategy strategy;
+
             if (DetonationStrategyFactory.generatedMines.ContainsKey(detonationType))
             {
                 strategy = DetonationStrategyFactory.generatedMines[detonationType];
