@@ -7,7 +7,11 @@ namespace BattleFieldGame.DetonationStretegies
     class QuintupleDetonationStrategy : IMineDetonationStrategy
     {
         private static readonly List<Coords> explosionCoords;
-         static QuintupleDetonationStrategy()
+
+        /// <summary>
+        /// Sets the coords of a mine of type five.
+        /// </summary>
+        static QuintupleDetonationStrategy()
         {
             explosionCoords = new List<Coords>()
             {
@@ -37,10 +41,15 @@ namespace BattleFieldGame.DetonationStretegies
                 new Coords(+2,+2)
                
             };
-        }
+         }
+
+        /// <summary>
+        /// Gets the explosion coords.
+        /// </summary>
+        /// <returns>Returns a list with coords for detonation.</returns>
         public List<Coords> GetExplosionCoordinates()
         {
-            return QuintupleDetonationStrategy.explosionCoords;
+        return QuintupleDetonationStrategy.explosionCoords;
         }
     }
 }

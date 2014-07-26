@@ -8,6 +8,10 @@ namespace BattleFieldGame.DetonationStretegies
     {
         private static readonly List<Coords> explosionCoords;
 
+
+        /// <summary>
+        /// Sets the coords of a mine of type three.
+        /// </summary>
         static TripleDetonationStretegy()
         {
             explosionCoords = new List<Coords>()
@@ -26,6 +30,11 @@ namespace BattleFieldGame.DetonationStretegies
                 new Coords(+2,0)
             };
         }
+
+        /// <summary>
+        /// Gets the explosion coords.
+        /// </summary>
+        /// <returns>Returns a list with coords for detonation.</returns>
         public List<Coords> GetExplosionCoordinates()
         {
             return TripleDetonationStretegy.explosionCoords;
