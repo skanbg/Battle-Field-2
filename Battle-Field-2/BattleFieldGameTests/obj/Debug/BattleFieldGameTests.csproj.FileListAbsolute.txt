@@ -5,3 +5,10 @@ C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleField
 C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.pdb
 C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.exe
 C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGameTests.dll
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGameTests.pdb
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.exe
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.pdb
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.csprojResolveAssemblyReference.cache
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.dll
+C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.pdb
