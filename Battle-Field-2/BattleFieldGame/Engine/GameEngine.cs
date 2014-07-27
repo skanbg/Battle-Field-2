@@ -61,7 +61,7 @@
         /// <param name="field">the field with its coords</param>
         /// <param name="fieldSize">the specified field size</param>
         /// <param name="renderer">draws the field on the screen</param>
-        public void RedrawField()
+        private void RedrawField()
         {
             do
             {
