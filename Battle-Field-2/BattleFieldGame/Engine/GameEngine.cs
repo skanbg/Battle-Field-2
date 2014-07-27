@@ -2,7 +2,8 @@
 {
     using System;
 
-    using BattleFieldGame.GameObjects;
+    using BattleFieldGame.GameObjects.FieldTiles;
+    using BattleFieldGame.GameObjects.GameField;
     using BattleFieldGame.Keyboard;
     using BattleFieldGame.Keyboard.ConsoleIO;
 
@@ -24,7 +25,7 @@
                 throw new ArgumentNullException("render can not be null");
             }
 
-            this.commandReader = new CommandReader(new ConsoleReader());
+            this.commandReader = commandReader;
             this.render = render;
 
             GameFieldFactory gameFieldFactory = new GameFieldFactory();

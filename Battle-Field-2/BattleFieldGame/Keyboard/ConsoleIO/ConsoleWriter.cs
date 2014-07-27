@@ -2,7 +2,8 @@
 {
     using System;
     using System.Text;
-    using BattleFieldGame.GameObjects;
+    using BattleFieldGame.GameObjects.GameField;
+    using BattleFieldGame.GameObjects.FieldTiles;
     using BattleFieldGame.Helpers;
 
     public class ConsoleWriter : IConsoleWriter

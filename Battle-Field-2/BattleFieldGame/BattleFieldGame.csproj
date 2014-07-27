@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameObjects\GameField\IGameFieldFactory.cs" />
     <Compile Include="Keyboard\CommandReader.cs" />
     <Compile Include="Keyboard\ConsoleIO\ConsoleReader.cs" />
     <Compile Include="DetonationStretegies\DoubleDetonationStrategy.cs" />
@@ -52,25 +53,25 @@
     <Compile Include="Engine\GameEngineFactory.cs" />
     <Compile Include="Engine\GameEngineType.cs" />
     <Compile Include="Engine\GameEngine.cs" />
-    <Compile Include="GameObjects\FieldTilesFactory.cs" />
-    <Compile Include="GameObjects\GameFieldFactory.cs" />
-    <Compile Include="GameObjects\GameFieldType.cs" />
-    <Compile Include="GameObjects\EmptyFieldTile.cs" />
-    <Compile Include="GameObjects\FieldTile.cs" />
-    <Compile Include="GameObjects\GameField.cs" />
-    <Compile Include="GameObjects\MineTile.cs" />
+    <Compile Include="GameObjects\FieldTiles\FieldTilesFactory.cs" />
+    <Compile Include="GameObjects\GameField\GameFieldFactory.cs" />
+    <Compile Include="GameObjects\GameField\GameFieldType.cs" />
+    <Compile Include="GameObjects\FieldTiles\EmptyFieldTile.cs" />
+    <Compile Include="GameObjects\FieldTiles\FieldTile.cs" />
+    <Compile Include="GameObjects\GameField\GameField.cs" />
+    <Compile Include="GameObjects\FieldTiles\MineTile.cs" />
     <Compile Include="Helpers\Coords.cs" />
     <Compile Include="Helpers\FieldTileStatus.cs" />
     <Compile Include="Helpers\FieldTileType.cs" />
     <Compile Include="Helpers\MineDetonationType.cs" />
     <Compile Include="Keyboard\IReader.cs" />
     <Compile Include="DetonationStretegies\IDetonationStrategyFactory.cs" />
-    <Compile Include="GameObjects\IFieldTile.cs" />
+    <Compile Include="GameObjects\FieldTiles\IFieldTile.cs" />
     <Compile Include="Engine\IGameEngine.cs" />
-    <Compile Include="GameObjects\IGameField.cs" />
+    <Compile Include="GameObjects\GameField\IGameField.cs" />
     <Compile Include="Keyboard\ConsoleIO\IConsoleWriter.cs" />
     <Compile Include="DetonationStretegies\IMineDetonationStrategy.cs" />
-    <Compile Include="GameObjects\IMineTile.cs" />
+    <Compile Include="GameObjects\FieldTiles\IMineTile.cs" />
     <Compile Include="Keyboard\ICommandReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

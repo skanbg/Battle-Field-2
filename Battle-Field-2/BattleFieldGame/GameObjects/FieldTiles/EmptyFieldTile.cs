@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame.GameObjects
+﻿namespace BattleFieldGame.GameObjects.FieldTiles
 {
     using BattleFieldGame.Helpers;
 

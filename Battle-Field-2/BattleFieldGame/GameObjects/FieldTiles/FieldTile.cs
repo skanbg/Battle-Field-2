@@ -1,8 +1,7 @@
-namespace BattleFieldGame.GameObjects
+namespace BattleFieldGame.GameObjects.FieldTiles
 {
     using System;
     using BattleFieldGame.Helpers;
-    using BattleFieldGame.Interfaces;
 
     public abstract class FieldTile : IFieldTile
     {

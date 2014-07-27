@@ -1,7 +1,7 @@
 ﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
-    using BattleFieldGame.GameObjects;
-
+    using BattleFieldGame.GameObjects.GameField;
+ 
     public interface IConsoleWriter
     {
         void WriteField(IGameField field);
