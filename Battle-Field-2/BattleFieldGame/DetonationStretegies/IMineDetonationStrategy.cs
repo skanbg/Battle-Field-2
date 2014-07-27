@@ -6,5 +6,7 @@
     public interface IMineDetonationStrategy
     {
         List<Coords> GetExplosionCoordinates();
+
+        IMineDetonationStrategy MinorStrategy { get; set; }
     }
 }

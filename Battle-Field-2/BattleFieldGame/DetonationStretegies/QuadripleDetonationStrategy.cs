@@ -7,6 +7,7 @@ namespace BattleFieldGame.DetonationStretegies
     class QuadripleDetonationStrategy : IMineDetonationStrategy
     {
         private static readonly List<Coords> explosionCoords;
+        private static IMineDetonationStrategy minorStrategy = null;
 
         /// <summary>
         /// Sets the coords of a mine of type four.
@@ -16,26 +17,20 @@ namespace BattleFieldGame.DetonationStretegies
             explosionCoords = new List<Coords>()
             {
                 new Coords(-1, -2),
-                new Coords(0, -2),
                 new Coords(+1, -2),
                 new Coords(-2, -1),
-                new Coords(-1, -1),
-                new Coords(0, -1),
-                new Coords(+1, -1),
                 new Coords(+2, -1),
-                new Coords(-2, 0),
-                new Coords(-1, 0),
-                new Coords(+1, 0),
-                new Coords(+2, 0),
                 new Coords(-2, +1),
-                new Coords(-1, +1),
-                new Coords(0, +1),
-                new Coords(+1, +1),
                 new Coords(+2, +1),
                 new Coords(-1, +2),
-                new Coords(0, +2),
                 new Coords(+1, +2),
             };
+        }
+
+        public IMineDetonationStrategy MinorStrategy
+        {
+            get { return QuadripleDetonationStrategy.minorStrategy; }
+            set { QuadripleDetonationStrategy.minorStrategy = value; }
         }
 
         /// <summary>
@@ -44,7 +39,14 @@ namespace BattleFieldGame.DetonationStretegies
         /// <returns>Returns a list with coords for detonation.</returns>
         public List<Coords> GetExplosionCoordinates()
         {
-            return QuadripleDetonationStrategy.explosionCoords;
+            List<Coords> currentExplosionCoords = QuadripleDetonationStrategy.explosionCoords;
+            if (this.MinorStrategy != null)
+            {
+                List<Coords> minorExplosionCoords = this.MinorStrategy.GetExplosionCoordinates();
+                currentExplosionCoords.AddRange(minorExplosionCoords);
+            }
+
+            return currentExplosionCoords;
         }
     }
 }

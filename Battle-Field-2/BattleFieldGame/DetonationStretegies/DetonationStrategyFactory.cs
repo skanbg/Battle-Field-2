@@ -24,37 +24,39 @@
         /// <returns>Returns the strategy of detonation.</returns>
         public IMineDetonationStrategy GetDetonationStrategy(MineDetonationType detonationType)
         {
-            IMineDetonationStrategy strategy;
-
             if (DetonationStrategyFactory.generatedMines.ContainsKey(detonationType))
             {
-                strategy = DetonationStrategyFactory.generatedMines[detonationType];
+                return DetonationStrategyFactory.generatedMines[detonationType];
             }
-            else
+
+            IMineDetonationStrategy strategy;
+            switch (detonationType)
             {
-                switch (detonationType)
-                {
-                    case MineDetonationType.Single:
-                        strategy = new SingleDetonationStrategy();
-                        break;
-                    case MineDetonationType.Double:
-                        strategy = new DoubleDetonationStrategy();
-                        break;
-                    case MineDetonationType.Triple:
-                        strategy = new TripleDetonationStretegy();
-                        break;
-                    case MineDetonationType.Quadriple:
-                        strategy = new QuadripleDetonationStrategy();
-                        break;
-                    case MineDetonationType.Quintuple:
-                        strategy = new QuintupleDetonationStrategy();
-                        break;
-                    default:
-                        throw new InvalidOperationException("Unsupported detonation type!");
-                }
-                
-                DetonationStrategyFactory.generatedMines.Add(detonationType, strategy);
+                case MineDetonationType.Single:
+                    strategy = new SingleDetonationStrategy();
+                    break;
+                case MineDetonationType.Double:
+                    strategy = new DoubleDetonationStrategy();
+                    strategy.MinorStrategy = this.GetDetonationStrategy(MineDetonationType.Single);
+                    break;
+                case MineDetonationType.Triple:
+                    strategy = new TripleDetonationStretegy();
+                    strategy.MinorStrategy = this.GetDetonationStrategy(MineDetonationType.Double);
+                    break;
+                case MineDetonationType.Quadriple:
+                    strategy = new QuadripleDetonationStrategy();
+                    strategy.MinorStrategy = this.GetDetonationStrategy(MineDetonationType.Triple);
+                    break;
+                case MineDetonationType.Quintuple:
+                    strategy = new QuintupleDetonationStrategy();
+                    strategy.MinorStrategy = this.GetDetonationStrategy(MineDetonationType.Quadriple);
+                    break;
+                default:
+                    throw new InvalidOperationException("Unsupported detonation type!");
             }
+
+            DetonationStrategyFactory.generatedMines.Add(detonationType, strategy);
+
             return strategy;
         }
     }
