@@ -14,12 +14,12 @@
          /// </summary>
          static SingleDetonationStrategy()
          {
-             explosionCoords =  new List<Coords>()
+            explosionCoords = new List<Coords>()
             {
-                new Coords(-1,-1),
-                new Coords(-1,+1),
-                new Coords(+1,-1),
-                new Coords(+1,+1)
+                new Coords(-1, -1),
+                new Coords(+1, -1),
+                new Coords(-1, +1),
+                new Coords(+1, +1)
             };
          }
 

@@ -42,29 +42,7 @@
             }
 
             Console.WriteLine(result.ToString());
-
-            //for (int i = 0; i < field.GetRowsCount(); i++)
-            //{
-            //    if (i == 0)
-            //    {
-            //        Console.Write("   " + i + " ");
-            //        continue;
-            //    }
-            //    Console.Write(" " + i + " ");
-            //}
-            //Console.WriteLine();
-            //Console.WriteLine();
-
-            //for (int i = 0; i < field.GetRowsCount(); i++)
-            //{
-            //    Console.Write(i + " ");
-            //    for (int j = 0; j < field.GetColumnsCount(); j++)
-            //    {
-            //        var item = field[i, j];
-            //        Console.Write(" " + GetTileSymbol(item) + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
+       
         }
 
         public void WriteMessage(string message)
@@ -114,37 +92,6 @@
             return ConsoleWriter.EmptyTileSymbol;
         }
 
-        ////top side numbers
-        //Console.Write("   ");
-        //for (int i = 0; i < fieldSize; i++)
-        //{
-        //    Console.Write(" " + i.ToString() + "  ");
-        //}
-
-        //Console.WriteLine(string.Empty);
-        //Console.Write("    ");
-        //for (int i = 0; i < (4 * fieldSize - 3); i++)
-        //{
-        //    Console.Write("-");
-        //}
-
-        //Console.WriteLine(string.Empty);
-        ////top side numbers
-        //Console.WriteLine(string.Empty);
-
-        //for (int i = 0; i < fieldSize; i++)
-        //{
-        //    //left side numbers
-        //    Console.Write(i.ToString() + "|");
-        //    for (int j = 0; j < fieldSize; j++)
-        //    {
-        //        Console.Write(" " + this.Field[i, j].ToString());
-        //    }
-
-        //    Console.WriteLine(string.Empty);
-        //    Console.WriteLine(string.Empty);
-        //    Console.WriteLine(string.Empty);
-        //}
 
 
         

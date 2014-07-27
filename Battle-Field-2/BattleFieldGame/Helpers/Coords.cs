@@ -6,8 +6,7 @@
         private int yCoord;
 
 
-        public Coords(int yCoord, int xCoord)
-            : this()
+        public Coords(int xCoord, int yCoord) : this()
         {
             this.Y = yCoord;
             this.X = xCoord;

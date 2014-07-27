@@ -1,0 +1,7 @@
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGameTests.dll
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGameTests.pdb
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.csprojResolveAssemblyReference.cache
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.dll
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\obj\Debug\BattleFieldGameTests.pdb
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.exe
+C:\Code\Battle-Field-2\Battle-Field-2\BattleFieldGameTests\bin\Debug\BattleFieldGame.pdb
