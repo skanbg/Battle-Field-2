@@ -3,6 +3,7 @@
     using System;
     using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.GameObjects.FieldTiles;
+    using BattleFieldGame.GameObjects.GameField.MinesCountStrategies;
     using BattleFieldGame.Interfaces;
     using BattleFieldGame.Helpers;
 
@@ -15,22 +16,25 @@
         private static readonly Random rnd = new Random();
         private readonly IDetonationStrategyFactory detonationStrategyFactory;
         private readonly IFieldTilesFactory fieldTilesFactory;
+        private readonly IMinesCountStrategy minesCountStrategy;
+
         public GameField(int fieldSize)
-            : this(fieldSize, new DetonationStrategyFactory(), new FieldTilesFactory())
+            : this(fieldSize, new DetonationStrategyFactory(), new FieldTilesFactory(), new MinesCountStrategyFactory().GetHard())
         {
 
         }
-        public GameField(int fieldSize, IDetonationStrategyFactory detonationStrategyFactory, IFieldTilesFactory fieldTilesFactory)
+        public GameField(int fieldSize, IDetonationStrategyFactory detonationStrategyFactory, IFieldTilesFactory fieldTilesFactory, IMinesCountStrategy minesCountStrategy)
         {
 
             this.FieldSize = fieldSize;
             this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
             this.detonationStrategyFactory = detonationStrategyFactory;
             this.fieldTilesFactory = fieldTilesFactory;
+            this.minesCountStrategy = minesCountStrategy;
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
             this.detonatedMines = 0;
-            
+
             Console.WriteLine(this.FieldSize);
         }
         public IFieldTile this[int row, int col]    // Indexer declaration
@@ -108,10 +112,7 @@
         /// <returns>The number of initial mines.</returns>
         private int CalculateInitialMinesCount()
         {
-            int cellsCount = this.FieldSize * this.FieldSize;
-            int minMinesCount = (int)Math.Floor(0.15 * cellsCount);
-            int maxMinesCount = (int)Math.Floor(0.3 * cellsCount);
-            int minesCount = rnd.Next(minMinesCount, maxMinesCount);
+            int minesCount = this.minesCountStrategy.GetMinesCount(this.FieldSize, GameField.rnd);
 
             return minesCount;
         }
