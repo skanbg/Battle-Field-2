@@ -22,13 +22,16 @@
         }
         public GameField(int fieldSize, IDetonationStrategyFactory detonationStrategyFactory, IFieldTilesFactory fieldTilesFactory)
         {
+
             this.FieldSize = fieldSize;
             this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
+            this.detonationStrategyFactory = detonationStrategyFactory;
+            this.fieldTilesFactory = fieldTilesFactory;
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
             this.detonatedMines = 0;
-            this.detonationStrategyFactory = detonationStrategyFactory;
-            this.fieldTilesFactory = fieldTilesFactory;
+            
+            Console.WriteLine(this.FieldSize);
         }
         public IFieldTile this[int row, int col]    // Indexer declaration
         {
@@ -131,7 +134,7 @@
 
                 if (this.Field[currentXCoordinate, currentYCoordinate] == null)
                 {
-                    currentMine = this.GenerateMine();
+                    currentMine = GenerateMine();
                     this.Field[currentXCoordinate, currentYCoordinate] = currentMine;
                     placedBombsCount++;
                 }
@@ -151,6 +154,7 @@
             IMineDetonationStrategy detonationStrategy;
 
             currentMineType = (MineDetonationType)rnd.Next(0, mineTypesCount);
+
             detonationStrategy = this.detonationStrategyFactory.GetDetonationStrategy(currentMineType);
             currentMine = this.fieldTilesFactory.GetMineTile(currentMineType, detonationStrategy);
 
