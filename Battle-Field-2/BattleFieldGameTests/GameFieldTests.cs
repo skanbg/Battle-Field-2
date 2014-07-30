@@ -34,18 +34,20 @@ namespace BattleFieldGameTests
         public void CheckColumnsWithFieldSize()
         {
             GameField field = new GameField(4);
+            int cols = field.GetColumnsCount();
             int expected = 4;
 
-            Assert.AreEqual(expected, field.GetColumsCount);
+            Assert.AreEqual(expected, cols);
         }
 
         [TestMethod]
         public void CheckRowsWithFieldSize()
         {
             GameField field = new GameField(7);
+            int rows = field.GetRowsCount();
             int expected = 7;
 
-            Assert.AreEqual(expected, field.GetRowsCount);
+            Assert.AreEqual(expected, rows);
         }
 
         [TestMethod]
