@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObjects\GameField\IGameFieldFactory.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\HardModeMinesCountStrategy.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\EasyModeMinesCountStrategy.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\IMinesCountStrategy.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\IMinesCountStrategyFactory.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\MinesCountStrategyFactory.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\NormalModeMinesCountStrategy.cs" />
     <Compile Include="Keyboard\CommandReader.cs" />
     <Compile Include="Keyboard\ConsoleIO\ConsoleReader.cs" />
     <Compile Include="DetonationStretegies\DoubleDetonationStrategy.cs" />
