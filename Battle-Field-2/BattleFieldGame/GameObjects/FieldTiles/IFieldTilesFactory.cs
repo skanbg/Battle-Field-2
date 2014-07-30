@@ -1,19 +1,15 @@
-﻿namespace BattleFieldGame.GameObjects.FieldTiles
+namespace BattleFieldGame.GameObjects.FieldTiles
 {
-    using BattleFieldGame.GameObjects.FieldTiles;
-    using BattleFieldGame.Interfaces;
     using BattleFieldGame.Helpers;
+    using BattleFieldGame.Interfaces;
 
-    public class FieldTilesFactory : IFieldTilesFactory
+    public interface IFieldTilesFactory
     {
         /// <summary>
         /// Creates an empty tile
         /// </summary>
         /// <returns>An empty tile</returns>
-        public IFieldTile GetEmptyTile()
-        {
-            return new EmptyFieldTile();
-        }
+        IFieldTile GetEmptyTile();
 
         /// <summary>
         /// Creates a mine tile with detonation type and strategy.
@@ -21,9 +17,6 @@
         /// <param name="detonationType">The specified detonation type</param>
         /// <param name="detonationStrategy">The specified strategy if detonation</param>
         /// <returns>A new mine tile with the specified params</returns>
-        public IMineTile GetMineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy)
-        {
-            return new MineTile(detonationType, detonationStrategy);
-        }
+        IMineTile GetMineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy);
     }
 }

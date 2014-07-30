@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameObjects\FieldTiles\IFieldTilesFactory.cs" />
     <Compile Include="GameObjects\GameField\IGameFieldFactory.cs" />
     <Compile Include="GameObjects\GameField\MinesCountStrategies\HardModeMinesCountStrategy.cs" />
     <Compile Include="GameObjects\GameField\MinesCountStrategies\EasyModeMinesCountStrategy.cs" />

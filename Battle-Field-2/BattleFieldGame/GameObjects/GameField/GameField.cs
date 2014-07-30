@@ -13,16 +13,23 @@
         private readonly int initialMines;
         private IFieldTile[,] field;
         private static readonly Random rnd = new Random();
-
+        private readonly IDetonationStrategyFactory detonationStrategyFactory;
+        private readonly IFieldTilesFactory fieldTilesFactory;
         public GameField(int fieldSize)
+            : this(fieldSize, new DetonationStrategyFactory(), new FieldTilesFactory())
+        {
+
+        }
+        public GameField(int fieldSize, IDetonationStrategyFactory detonationStrategyFactory, IFieldTilesFactory fieldTilesFactory)
         {
             this.FieldSize = fieldSize;
             this.Field = new IFieldTile[this.FieldSize, this.FieldSize];
             this.initialMines = CalculateInitialMinesCount();
             this.GenerateField();
             this.detonatedMines = 0;
+            this.detonationStrategyFactory = detonationStrategyFactory;
+            this.fieldTilesFactory = fieldTilesFactory;
         }
-
         public IFieldTile this[int row, int col]    // Indexer declaration
         {
             get
@@ -79,7 +86,6 @@
         /// </summary>
         private void FillEmptyCells()
         {
-            var tileFactory = new FieldTilesFactory();
 
             for (int i = 0; i < this.FieldSize; i++)
             {
@@ -87,7 +93,7 @@
                 {
                     if (this.Field[i, j] == null)
                     {
-                        this.Field[i, j] = tileFactory.GetEmptyTile();
+                        this.Field[i, j] = this.fieldTilesFactory.GetEmptyTile();
                     }
                 }
             }
@@ -125,7 +131,7 @@
 
                 if (this.Field[currentXCoordinate, currentYCoordinate] == null)
                 {
-                    currentMine = GameField.GenerateMine();
+                    currentMine = this.GenerateMine();
                     this.Field[currentXCoordinate, currentYCoordinate] = currentMine;
                     placedBombsCount++;
                 }
@@ -137,17 +143,17 @@
         /// Creates a single mine with detonation type and strategy.
         /// </summary>
         /// <returns>The mine tile</returns>
-        private static IMineTile GenerateMine() // To be replaced by prototype
+        private IMineTile GenerateMine() // To be replaced by prototype
         {
             int mineTypesCount = Enum.GetNames(typeof(MineDetonationType)).Length;   // Gets the number of options in the enumeration
             MineDetonationType currentMineType;
             IMineTile currentMine;
-            var tileFactory = new FieldTilesFactory(); // Add interface
-            IDetonationStrategyFactory detonationStrategyFactory = new DetonationStrategyFactory();
             IMineDetonationStrategy detonationStrategy;
+
             currentMineType = (MineDetonationType)rnd.Next(0, mineTypesCount);
-            detonationStrategy = detonationStrategyFactory.GetDetonationStrategy(currentMineType);
-            currentMine = tileFactory.GetMineTile(currentMineType, detonationStrategy);
+            detonationStrategy = this.detonationStrategyFactory.GetDetonationStrategy(currentMineType);
+            currentMine = this.fieldTilesFactory.GetMineTile(currentMineType, detonationStrategy);
+
             return currentMine;
         }
 
@@ -179,7 +185,7 @@
         /// <param name="yCoord">The yCoord of the mine</param>
         public void DetonateMine(int xCoord, int yCoord)
         {
-            var currentMine = this.Field[xCoord,yCoord] as IMineTile;
+            var currentMine = this.Field[xCoord, yCoord] as IMineTile;
             var explosionTrajectory = currentMine.ExecuteDetonation();
             // count hte mine that exploded
             this.DetonatedMines++;
@@ -189,7 +195,7 @@
                 int currentXPos = xCoord + explosionTrajectory[i].X;
                 int currentYPos = yCoord + explosionTrajectory[i].Y;
 
-                if (currentXPos>= 0 && currentXPos < this.FieldSize && currentYPos >= 0 && currentYPos < this.FieldSize)
+                if (currentXPos >= 0 && currentXPos < this.FieldSize && currentYPos >= 0 && currentYPos < this.FieldSize)
                 {
                     var currentFieldTile = Field[currentXPos, currentYPos];
                     currentFieldTile.Status = FieldTileStatus.Detonated;
@@ -200,7 +206,7 @@
                         this.DetonatedMines++;
                     }
                 }
-            }       
+            }
         }
     }
 }
