@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGame
+﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
     using BattleFieldGame.Keyboard;
     using System;

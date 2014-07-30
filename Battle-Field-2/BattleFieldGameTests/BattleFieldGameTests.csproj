@@ -50,6 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ConsoleReaderTests.cs" />
+    <Compile Include="DetonationStrategies\DoubleDetonationStrategyTests.cs" />
+    <Compile Include="DetonationStrategies\SingleDetonationStrategyTests.cs" />
     <Compile Include="GameEngineTests.cs" />
     <Compile Include="CoordsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

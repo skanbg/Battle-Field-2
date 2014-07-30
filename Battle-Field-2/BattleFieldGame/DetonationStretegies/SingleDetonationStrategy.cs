@@ -5,7 +5,7 @@
     using BattleFieldGame.Helpers;
     using BattleFieldGame.Interfaces;
 
-    class SingleDetonationStrategy : IMineDetonationStrategy
+    public class SingleDetonationStrategy : IMineDetonationStrategy
     {
         private static readonly List<Coords> explosionCoords;
         private static IMineDetonationStrategy minorStrategy = null;

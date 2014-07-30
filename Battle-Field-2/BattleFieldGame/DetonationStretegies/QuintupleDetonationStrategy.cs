@@ -4,7 +4,7 @@ namespace BattleFieldGame.DetonationStretegies
     using BattleFieldGame.Helpers;
     using BattleFieldGame.Interfaces;
 
-    class QuintupleDetonationStrategy : IMineDetonationStrategy
+    public class QuintupleDetonationStrategy : IMineDetonationStrategy
     {
         private static readonly List<Coords> explosionCoords;
         private static IMineDetonationStrategy minorStrategy = null;

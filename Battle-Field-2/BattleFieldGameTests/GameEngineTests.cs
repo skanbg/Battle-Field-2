@@ -1,13 +1,13 @@
-﻿using System;
-using BattleFieldGame;
-using BattleFieldGame.Engine;
-using BattleFieldGame.Keyboard;
-using BattleFieldGame.Keyboard.ConsoleIO;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BattleFieldGame.GameObjects.GameField;
-
-namespace BattleFieldGameTests
+﻿namespace BattleFieldGameTests
 {
+    using System;
+    using BattleFieldGame;
+    using BattleFieldGame.Engine;
+    using BattleFieldGame.Keyboard;
+    using BattleFieldGame.Keyboard.ConsoleIO;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using BattleFieldGame.GameObjects.GameField;
+
     [TestClass]
     public class GameEngineTests
     {
