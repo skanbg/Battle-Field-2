@@ -27,3 +27,6 @@ C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\o
 C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.pdb
 C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe
 C:\Users\Gencho\Documents\GitHub\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.pdb
+D:\Vanina\GitHub\PersonalProjects\TeamBattleField2\Battle-Field-2\Battle-Field-2\BattleFieldGame\bin\Debug\BattleFieldGame.exe.config
+D:\Vanina\GitHub\PersonalProjects\TeamBattleField2\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.exe
+D:\Vanina\GitHub\PersonalProjects\TeamBattleField2\Battle-Field-2\Battle-Field-2\BattleFieldGame\obj\Debug\BattleFieldGame.pdb
