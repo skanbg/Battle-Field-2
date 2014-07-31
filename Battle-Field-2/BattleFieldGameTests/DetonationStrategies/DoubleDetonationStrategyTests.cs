@@ -1,4 +1,4 @@
-﻿namespace BattleFieldGameTests
+﻿namespace BattleFieldGameTests.DetonationStrategies
 {
     using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.Helpers;
