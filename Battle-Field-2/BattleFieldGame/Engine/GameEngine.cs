@@ -39,7 +39,6 @@
             {
                 this.field = field;
             }
-            
         }
 
         /// <summary>

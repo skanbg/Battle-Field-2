@@ -1,7 +1,7 @@
 ﻿namespace BattleFieldGame.Keyboard.ConsoleIO
 {
-    using BattleFieldGame.Keyboard;
     using System;
+    using BattleFieldGame.Keyboard;
 
     public class ConsoleReader : IReader
     {

@@ -27,6 +27,7 @@ namespace BattleFieldGame.GameObjects.FieldTiles
             {
                 return this.status;
             }
+
              set
             {
                 this.status = value;

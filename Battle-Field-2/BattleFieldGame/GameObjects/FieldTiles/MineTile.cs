@@ -1,18 +1,19 @@
 ﻿namespace BattleFieldGame.GameObjects.FieldTiles
 {
     using System;
+    using System.Collections.Generic;
     using BattleFieldGame.Helpers;
     using BattleFieldGame.Interfaces;
-    using System.Collections.Generic;
 
-    class MineTile : FieldTile, IMineTile
+    public class MineTile : FieldTile, IMineTile
     {
         private const FieldTileType MineTileType = FieldTileType.MineTile;
 
         private readonly MineDetonationType detonationType;
         private readonly IMineDetonationStrategy detonationStrategy;
 
-        public MineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy) : base(MineTile.MineTileType)
+        public MineTile(MineDetonationType detonationType, IMineDetonationStrategy detonationStrategy)
+            : base(MineTile.MineTileType)
         {
             this.detonationType = detonationType;
             this.detonationStrategy = detonationStrategy;

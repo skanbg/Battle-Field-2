@@ -1,12 +1,12 @@
 ﻿namespace BattleFieldGame.Interfaces
 {
-    using BattleFieldGame.Helpers;
     using System.Collections.Generic;
+    using BattleFieldGame.Helpers;
 
     public interface IMineDetonationStrategy
     {
-        List<Coords> GetExplosionCoordinates();
-
         IMineDetonationStrategy MinorStrategy { get; set; }
+
+        List<Coords> GetExplosionCoordinates();
     }
 }

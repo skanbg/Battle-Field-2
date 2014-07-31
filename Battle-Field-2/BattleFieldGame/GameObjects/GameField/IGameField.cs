@@ -1,15 +1,10 @@
-﻿using BattleFieldGame.GameObjects;
-using BattleFieldGame.GameObjects.FieldTiles;
-
-namespace BattleFieldGame.GameObjects.GameField
+﻿namespace BattleFieldGame.GameObjects.GameField
 {
+    using BattleFieldGame.GameObjects;
+    using BattleFieldGame.GameObjects.FieldTiles;
+
     public interface IGameField
     {
-        int FieldSize
-        {
-            get;
-        }
-
         int DetonatedMines
         {
             get;
@@ -20,15 +15,19 @@ namespace BattleFieldGame.GameObjects.GameField
             get;
         }
 
-        int GetRowsCount();
-
-        int GetColumnsCount();
+        int FieldSize
+        {
+            get;
+        }
 
         IFieldTile this[int col, int row]
         {
             get;
-            //set; Uncomment if you need public setter
         }
+
+        int GetRowsCount();
+
+        int GetColumnsCount();
 
         void DetonateMine(int xCoord, int yCoord);
     }

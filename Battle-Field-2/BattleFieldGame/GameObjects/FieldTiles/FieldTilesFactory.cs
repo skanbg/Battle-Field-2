@@ -1,8 +1,7 @@
 ﻿namespace BattleFieldGame.GameObjects.FieldTiles
 {
-    using BattleFieldGame.GameObjects.FieldTiles;
-    using BattleFieldGame.Interfaces;
     using BattleFieldGame.Helpers;
+    using BattleFieldGame.Interfaces;
 
     public class FieldTilesFactory : IFieldTilesFactory
     {

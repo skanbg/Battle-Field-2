@@ -1,7 +1,7 @@
 ﻿namespace BattleFieldGame.GameObjects.FieldTiles
 {
-    using BattleFieldGame.Helpers;
     using System.Collections.Generic;
+    using BattleFieldGame.Helpers;
 
     public interface IMineTile : IFieldTile
     {

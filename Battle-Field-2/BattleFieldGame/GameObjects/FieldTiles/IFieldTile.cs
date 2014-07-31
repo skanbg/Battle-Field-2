@@ -4,10 +4,8 @@
 
     public interface IFieldTile
     {
-
         FieldTileType TileType { get; }
 
         FieldTileStatus Status { get; set; }
-
     }
 }

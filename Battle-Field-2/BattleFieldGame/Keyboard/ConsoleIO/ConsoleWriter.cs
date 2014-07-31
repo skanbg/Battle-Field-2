@@ -2,8 +2,8 @@
 {
     using System;
     using System.Text;
-    using BattleFieldGame.GameObjects.GameField;
     using BattleFieldGame.GameObjects.FieldTiles;
+    using BattleFieldGame.GameObjects.GameField;
     using BattleFieldGame.Helpers;
 
     public class ConsoleWriter : IConsoleWriter
@@ -19,11 +19,11 @@
             {
                 if (i == 0)
                 {
-                    result.AppendFormat(String.Format("   {0} ", i));
+                    result.AppendFormat(string.Format("   {0} ", i));
                     continue;
                 }
 
-                result.AppendFormat(String.Format(" {0} ", i));
+                result.AppendFormat(string.Format(" {0} ", i));
             }
 
             result.AppendLine();
@@ -36,14 +36,13 @@
                 for (int j = 0; j < field.GetColumnsCount(); j++)
                 {
                     var item = field[i, j];
-                    result.AppendFormat(string.Format(" {0} ", GetTileSymbol(item)));
+                    result.AppendFormat(string.Format(" {0} ", this.GetTileSymbol(item)));
                 }
 
                 result.AppendLine();
             }
 
             Console.WriteLine(result.ToString());
-       
         }
 
         public void WriteMessage(string message)
@@ -61,15 +60,15 @@
             switch (tile.TileType)
             {
                 case FieldTileType.EmptyTile:
-                    return GetEmptyTileSymbol(tile);
+                    return this.GetEmptyTileSymbol(tile);
                 case FieldTileType.MineTile:
-                    return GetMineSymbol(tile as IMineTile);
+                    return this.GetMineSymbol(tile as IMineTile);
                 default:
                     throw new ArgumentException("Invalid tile type!");
             }
         }
 
-        private char GetMineSymbol(IMineTile mine)
+        public char GetMineSymbol(IMineTile mine)
         {
             switch (mine.DetonationType)
             {
@@ -92,9 +91,5 @@
         {
             return ConsoleWriter.EmptyTileSymbol;
         }
-
-
-
-        
     }
 }

@@ -9,7 +9,6 @@
         public EmptyFieldTile()
             : base(EmptyFieldTile.EmptyTileType)
         {
-
         }
     }
 }

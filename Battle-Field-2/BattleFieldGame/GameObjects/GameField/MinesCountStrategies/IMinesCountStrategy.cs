@@ -1,8 +1,9 @@
 ﻿namespace BattleFieldGame.GameObjects.GameField.MinesCountStrategies
 {
     using System;
-  public  interface IMinesCountStrategy
+
+    public interface IMinesCountStrategy
     {
-        int GetMinesCount(int fieldSize,  Random rnd);
+        int GetMinesCount(int fieldSize, Random rnd);
     }
 }

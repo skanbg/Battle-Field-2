@@ -5,7 +5,6 @@
         private int xCoord;
         private int yCoord;
 
-
         public Coords(int xCoord, int yCoord) : this()
         {
             this.Y = yCoord;
@@ -18,6 +17,7 @@
             {
                 return this.yCoord;
             }
+
             set
             {
                 this.yCoord = value;
@@ -30,11 +30,11 @@
             {
                 return this.xCoord;
             }
+
             set
             {
                 this.xCoord = value;
             }
         }
-
     }
 }

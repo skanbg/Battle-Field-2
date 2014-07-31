@@ -6,7 +6,7 @@ namespace BattleFieldGame.DetonationStretegies
 
     public class QuintupleDetonationStrategy : IMineDetonationStrategy
     {
-        private static readonly List<Coords> explosionCoords;
+        private static readonly List<Coords> ExplosionCoords;
         private static IMineDetonationStrategy minorStrategy = null;
 
         /// <summary>
@@ -14,7 +14,7 @@ namespace BattleFieldGame.DetonationStretegies
         /// </summary>
         static QuintupleDetonationStrategy()
         {
-            explosionCoords = new List<Coords>()
+            ExplosionCoords = new List<Coords>()
             {
                 new Coords(-2, -2),
                 new Coords(+2, -2),
@@ -39,7 +39,7 @@ namespace BattleFieldGame.DetonationStretegies
         /// <returns>Returns a list with coords for detonation.</returns>
         public List<Coords> GetExplosionCoordinates()
         {
-            List<Coords> currentExplosionCoords = QuintupleDetonationStrategy.explosionCoords;
+            List<Coords> currentExplosionCoords = QuintupleDetonationStrategy.ExplosionCoords;
             if (this.MinorStrategy != null)
             {
                 List<Coords> minorExplosionCoords = this.MinorStrategy.GetExplosionCoordinates();

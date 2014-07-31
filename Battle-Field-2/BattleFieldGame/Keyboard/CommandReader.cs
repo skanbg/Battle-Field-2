@@ -32,26 +32,26 @@
         private int[] ReadCommand()
         {
             string input = this.reader.Read();
-            int[] resulrs = new int[2];
+            int[] results = new int[2];
 
             string[] tokens = input.Split(' ');
 
             if (tokens.Length == 2)
             {
-                resulrs[0] = Int16.Parse(tokens[0]);
-                resulrs[1] = Int16.Parse(tokens[1]);
+                results[0] = short.Parse(tokens[0]);
+                results[1] = short.Parse(tokens[1]);
             }
             else if (tokens.Length == 1)
             {
-                resulrs[0] = Int16.Parse(tokens[0]);
-                resulrs[1] = resulrs[0];
+                results[0] = short.Parse(tokens[0]);
+                results[1] = results[0];
             }
             else
             {
-                throw new ArgumentOutOfRangeException("Invalid user input");
+                throw new FormatException("Invalid user input");
             }
 
-            return resulrs;
+            return results;
         }
     }
 }

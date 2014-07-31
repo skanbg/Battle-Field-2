@@ -7,7 +7,7 @@
 
     public class SingleDetonationStrategy : IMineDetonationStrategy
     {
-        private static readonly List<Coords> explosionCoords;
+        private static readonly List<Coords> ExplosionCoords;
         private static IMineDetonationStrategy minorStrategy = null;
 
         /// <summary>
@@ -15,7 +15,7 @@
         /// </summary>
         static SingleDetonationStrategy()
         {
-            explosionCoords = new List<Coords>()
+            ExplosionCoords = new List<Coords>()
             {
                 new Coords(-1, -1),
                 new Coords(+1, -1),
@@ -36,7 +36,7 @@
         /// <returns>Returns a list with coords for detonation.</returns>
         public List<Coords> GetExplosionCoordinates()
         {
-            List<Coords> currentExplosionCoords = SingleDetonationStrategy.explosionCoords;
+            List<Coords> currentExplosionCoords = SingleDetonationStrategy.ExplosionCoords;
             if (this.MinorStrategy != null)
             {
                 List<Coords> minorExplosionCoords = this.MinorStrategy.GetExplosionCoordinates();
