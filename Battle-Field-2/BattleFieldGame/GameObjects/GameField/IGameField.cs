@@ -29,6 +29,6 @@
 
         int GetColumnsCount();
 
-        void DetonateMine(int xCoord, int yCoord);
+        void DetonateMine(int coordX, int coordY);
     }
 }

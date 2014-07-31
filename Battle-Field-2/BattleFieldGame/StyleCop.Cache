@@ -219,8 +219,8 @@
   <sourcecode name="DetonationStrategyFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.460</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.790</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -242,8 +242,8 @@
   <sourcecode name="DoubleDetonationStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:22:19.257</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.791</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -265,8 +265,8 @@
   <sourcecode name="IDetonationStrategyFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.442</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.792</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -288,8 +288,8 @@
   <sourcecode name="IMineDetonationStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:22:46.966</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.793</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -311,8 +311,8 @@
   <sourcecode name="QuadripleDetonationStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:22:57.789</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.794</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -334,8 +334,8 @@
   <sourcecode name="QuintupleDetonationStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:23:08.108</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.796</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -357,8 +357,8 @@
   <sourcecode name="SingleDetonationStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:23:19.807</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.798</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -380,8 +380,8 @@
   <sourcecode name="TripleDetonationStretegy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:23:26.696</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.799</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -403,8 +403,8 @@
   <sourcecode name="GameEngine.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:26:43.592</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.835</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -426,8 +426,8 @@
   <sourcecode name="GameEngineFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.473</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.836</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -449,8 +449,8 @@
   <sourcecode name="GameEngineType.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.483</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.838</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -472,8 +472,8 @@
   <sourcecode name="IGameEngine.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.476</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.839</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -495,8 +495,8 @@
   <sourcecode name="EmptyFieldTile.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:23:50.733</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.869</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -518,8 +518,8 @@
   <sourcecode name="FieldTile.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:24:02.818</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.870</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -541,8 +541,8 @@
   <sourcecode name="FieldTilesFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:26:43.600</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.871</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -564,8 +564,8 @@
   <sourcecode name="IFieldTile.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:26:43.606</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.872</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -587,8 +587,8 @@
   <sourcecode name="IFieldTilesFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.009</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.873</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -610,8 +610,8 @@
   <sourcecode name="IMineTile.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:26:43.612</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.874</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -633,8 +633,8 @@
   <sourcecode name="MineTile.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:25:33.574</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.875</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -656,8 +656,8 @@
   <sourcecode name="GameField.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:40:25.946</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:46:18.915</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -674,24 +674,13 @@
       <StyleCop.CSharp.SpacingRules>2014.04.01 10:18:24.000</StyleCop.CSharp.SpacingRules>
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'xCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>112</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'yCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>112</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="GameFieldFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.049</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.938</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -713,8 +702,8 @@
   <sourcecode name="GameFieldType.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.038</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.939</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -736,8 +725,8 @@
   <sourcecode name="IGameField.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:41:19.376</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:46:35.015</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -754,24 +743,13 @@
       <StyleCop.CSharp.SpacingRules>2014.04.01 10:18:24.000</StyleCop.CSharp.SpacingRules>
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'xCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>32</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'yCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>32</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="IGameFieldFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.029</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.941</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -793,8 +771,8 @@
   <sourcecode name="EasyModeMinesCountStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.226</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.942</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -816,8 +794,8 @@
   <sourcecode name="HardModeMinesCountStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.175</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.943</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -839,8 +817,8 @@
   <sourcecode name="IMinesCountStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:28:03.867</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.945</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -862,8 +840,8 @@
   <sourcecode name="IMinesCountStrategyFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.165</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.946</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -885,8 +863,8 @@
   <sourcecode name="MinesCountStrategyFactory.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.234</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.947</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -908,8 +886,8 @@
   <sourcecode name="NormalModeMinesCountStrategy.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.249</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:52.949</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -931,8 +909,8 @@
   <sourcecode name="Coords.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:30:17.801</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:47:05.404</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -949,34 +927,13 @@
       <StyleCop.CSharp.SpacingRules>2014.04.01 10:18:24.000</StyleCop.CSharp.SpacingRules>
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'xCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>5</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'yCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>6</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'xCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustNotUseHungarianNotation" ruleCheckId="SA1305">
-        <context>The variable name 'yCoord' begins with a prefix that looks like Hungarian notation. Remove the prefix or add it to the list of allowed prefixes.</context>
-        <line>8</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="FieldTileStatus.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.432</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.145</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -998,8 +955,8 @@
   <sourcecode name="FieldTileType.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:30:17.808</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.180</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1021,8 +978,8 @@
   <sourcecode name="MineDetonationType.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.425</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.181</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1044,8 +1001,8 @@
   <sourcecode name="CommandReader.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:29:10.830</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.241</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1067,8 +1024,8 @@
   <sourcecode name="ConsoleReader.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:40:58.246</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.242</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1090,8 +1047,8 @@
   <sourcecode name="ConsoleWriter.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 03:40:58.231</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:39:57.195</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1113,8 +1070,8 @@
   <sourcecode name="IConsoleWriter.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.321</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.245</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1136,8 +1093,8 @@
   <sourcecode name="ICommandReader.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.331</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.253</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1159,8 +1116,8 @@
   <sourcecode name="IReader.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.334</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.254</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1182,8 +1139,8 @@
   <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:53.948</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.264</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1205,8 +1162,8 @@
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:18:24.000</styleCop>
-      <settingsFile>2014.07.31 01:54:54.337</settingsFile>
-      <sourceFile>2014.07.31 01:54:54.310</sourceFile>
+      <settingsFile>2014.07.31 06:38:54.281</settingsFile>
+      <sourceFile>2014.07.31 06:38:54.266</sourceFile>
       <parser>2014.04.01 10:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 10:18:24.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1945363787</StyleCop.CSharp.DocumentationRules.FilesHashCode>

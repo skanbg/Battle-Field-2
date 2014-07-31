@@ -45,6 +45,25 @@
             Console.WriteLine(result.ToString());
         }
 
+        public char GetMineSymbol(IMineTile mine)
+        {
+            switch (mine.DetonationType)
+            {
+                case MineDetonationType.Single:
+                    return '1';
+                case MineDetonationType.Double:
+                    return '2';
+                case MineDetonationType.Triple:
+                    return '3';
+                case MineDetonationType.Quadriple:
+                    return '4';
+                case MineDetonationType.Quintuple:
+                    return '5';
+                default:
+                    throw new ArgumentException("Invalid mine detonation type!");
+            }
+        }
+
         public void WriteMessage(string message)
         {
             Console.Write(message);
@@ -65,25 +84,6 @@
                     return this.GetMineSymbol(tile as IMineTile);
                 default:
                     throw new ArgumentException("Invalid tile type!");
-            }
-        }
-
-        public char GetMineSymbol(IMineTile mine)
-        {
-            switch (mine.DetonationType)
-            {
-                case MineDetonationType.Single:
-                    return '1';
-                case MineDetonationType.Double:
-                    return '2';
-                case MineDetonationType.Triple:
-                    return '3';
-                case MineDetonationType.Quadriple:
-                    return '4';
-                case MineDetonationType.Quintuple:
-                    return '5';
-                default:
-                    throw new ArgumentException("Invalid mine detonation type!");
             }
         }
 

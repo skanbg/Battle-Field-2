@@ -1,9 +1,9 @@
 ﻿namespace BattleFieldGameTests
 {
-    using BattleFieldGame.Keyboard.ConsoleIO;
-    using BattleFieldGame.GameObjects.GameField;
     using System;
     using System.IO;
+    using BattleFieldGame.GameObjects.GameField;
+    using BattleFieldGame.Keyboard.ConsoleIO;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]

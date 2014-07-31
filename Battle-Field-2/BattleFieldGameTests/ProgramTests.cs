@@ -3,8 +3,8 @@
     using System;
     using System.IO;
     using System.Text;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using BattleFieldGame;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class ProgramTests

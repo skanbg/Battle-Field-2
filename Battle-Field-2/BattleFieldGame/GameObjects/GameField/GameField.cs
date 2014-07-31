@@ -88,19 +88,19 @@
         /// and increases the number of detonated mines 
         /// each time it succeeds.
         /// </summary>
-        /// <param name="xCoord">The xCoord of the mine</param>
-        /// <param name="yCoord">The yCoord of the mine</param>
-        public void DetonateMine(int xCoord, int yCoord)
+        /// <param name="coordX">The coordX of the mine</param>
+        /// <param name="coordY">The coordY of the mine</param>
+        public void DetonateMine(int coordX, int coordY)
         {
-            var currentMine = this.Field[xCoord, yCoord] as IMineTile;
+            var currentMine = this.Field[coordX, coordY] as IMineTile;
             var explosionTrajectory = currentMine.ExecuteDetonation();
             /// count hte mine that exploded
             this.DetonatedMines++;
 
             for (int i = 0; i < explosionTrajectory.Count; i++)
             {
-                int currentXPos = xCoord + explosionTrajectory[i].X;
-                int currentYPos = yCoord + explosionTrajectory[i].Y;
+                int currentXPos = coordX + explosionTrajectory[i].X;
+                int currentYPos = coordY + explosionTrajectory[i].Y;
 
                 if (currentXPos >= 0 && currentXPos < this.FieldSize && currentYPos >= 0 && currentYPos < this.FieldSize)
                 {

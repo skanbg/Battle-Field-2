@@ -1,8 +1,8 @@
 ﻿namespace BattleFieldGameTests.DetonationStrategies
 {
+    using System;
     using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.Helpers;
-    using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
@@ -52,13 +52,5 @@
 
             Assert.IsInstanceOfType(quintupleStrategy, typeof(QuintupleDetonationStrategy));
         }
-
-        //[TestMethod]
-        //public void DetonationStrategyFactoryMustThrowErrorWithNullParameter()
-        //{
-        //    var detonationStrategyFactory = new DetonationStrategyFactory();
-        //    dynamic something;
-        //    detonationStrategyFactory.GetDetonationStrategy(something);
-        //}
     }
 }

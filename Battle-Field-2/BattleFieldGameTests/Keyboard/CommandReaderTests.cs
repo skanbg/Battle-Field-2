@@ -2,9 +2,9 @@
 {
     using System;
     using System.IO;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using BattleFieldGame.Keyboard;
     using BattleFieldGame.Keyboard.ConsoleIO;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class CommandReaderTests

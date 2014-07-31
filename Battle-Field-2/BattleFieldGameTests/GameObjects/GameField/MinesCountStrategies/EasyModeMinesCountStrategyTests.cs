@@ -2,10 +2,10 @@
 {
     using System;
     using System.IO;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using BattleFieldGame.GameObjects.GameField.MinesCountStrategies;
     using BattleFieldGame.Keyboard;
     using BattleFieldGame.Keyboard.ConsoleIO;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class EasyModeMinesCountStrategyTests

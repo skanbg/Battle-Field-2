@@ -2,11 +2,11 @@
 {
     using System;
     using System.IO;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using BattleFieldGame.DetonationStretegies;
     using BattleFieldGame.GameObjects.FieldTiles;
     using BattleFieldGame.Helpers;
     using BattleFieldGame.Keyboard.ConsoleIO;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class ConsoleWriterTests

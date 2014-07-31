@@ -1,12 +1,11 @@
 ﻿namespace BattleFieldGameTests
 {
     using System;
-    using BattleFieldGame;
     using BattleFieldGame.Engine;
+    using BattleFieldGame.GameObjects.GameField;
     using BattleFieldGame.Keyboard;
     using BattleFieldGame.Keyboard.ConsoleIO;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using BattleFieldGame.GameObjects.GameField;
 
     [TestClass]
     public class GameEngineTests
@@ -53,7 +52,7 @@
             engine.StartBattleFieldGame();
         }
 
-        class FakeCommandReader : ICommandReader
+        private class FakeCommandReader : ICommandReader
         {
             private int row = -2;
             private int col = -2;
@@ -82,6 +81,5 @@
                 return this.size;
             }
         }
-
     }
 }

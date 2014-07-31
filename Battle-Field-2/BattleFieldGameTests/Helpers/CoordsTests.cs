@@ -1,20 +1,20 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BattleFieldGame.Helpers;
-
-namespace BattleFieldGameTests
+﻿namespace BattleFieldGameTests
 {
+    using System;
+    using BattleFieldGame.Helpers;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class CoordsTests
     {
         [TestMethod]
         public void TestCoordinatesClassPropertyAssignment()
         {
-            int xCoord = 5;
-            int yCoord = 10;
-            var coords = new Coords(xCoord, yCoord);
-            Assert.AreEqual(coords.X, xCoord);
-            Assert.AreEqual(coords.Y, yCoord);
+            int coordX = 5;
+            int coordY = 10;
+            var coords = new Coords(coordX, coordY);
+            Assert.AreEqual(coords.X, coordX);
+            Assert.AreEqual(coords.Y, coordY);
         }
     }
 }

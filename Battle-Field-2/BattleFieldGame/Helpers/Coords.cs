@@ -2,25 +2,25 @@
 {
     public struct Coords
     {
-        private int xCoord;
-        private int yCoord;
+        private int coordX;
+        private int coordY;
 
-        public Coords(int xCoord, int yCoord) : this()
+        public Coords(int coordX, int coordY) : this()
         {
-            this.Y = yCoord;
-            this.X = xCoord;
+            this.Y = coordY;
+            this.X = coordX;
         }
 
         public int Y
         {
             get
             {
-                return this.yCoord;
+                return this.coordY;
             }
 
             set
             {
-                this.yCoord = value;
+                this.coordY = value;
             }
         }
 
@@ -28,12 +28,12 @@
         {
             get
             {
-                return this.xCoord;
+                return this.coordX;
             }
 
             set
             {
-                this.xCoord = value;
+                this.coordX = value;
             }
         }
     }

@@ -1,10 +1,10 @@
 ﻿namespace BattleFieldGameTests.DetonationStrategies
 {
-    using BattleFieldGame.DetonationStretegies;
-    using BattleFieldGame.Helpers;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using BattleFieldGame.DetonationStretegies;
+    using BattleFieldGame.Helpers;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
