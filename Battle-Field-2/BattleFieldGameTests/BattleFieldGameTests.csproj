@@ -50,12 +50,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ConsoleReaderTests.cs" />
+    <Compile Include="GameObjects\GameField\GameFieldFactoryTests.cs" />
+    <Compile Include="Keyboard\ConsoleIO\ConsoleWriterTests.cs" />
+    <Compile Include="Keyboard\ConsoleIO\ConsoleReaderTests.cs" />
+    <Compile Include="DetonationStrategies\QuintupleDetonationStrategyTests.cs" />
+    <Compile Include="DetonationStrategies\QuadripleDetonationStrategyTests.cs" />
+    <Compile Include="DetonationStrategies\TrippleDetonationStrategyTests.cs" />
     <Compile Include="DetonationStrategies\DoubleDetonationStrategyTests.cs" />
     <Compile Include="DetonationStrategies\SingleDetonationStrategyTests.cs" />
-    <Compile Include="GameEngineTests.cs" />
-    <Compile Include="CoordsTests.cs" />
+    <Compile Include="DetonationStrategies\DetonationStrategyFactoryTests.cs" />
+    <Compile Include="Engine\GameEngineFactoryTests.cs" />
+    <Compile Include="Engine\GameEngineTests.cs" />
+    <Compile Include="Helpers\CoordsTests.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\MinesCountStrategyFactoryTests.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\NormalModeMinesCountStrategyTests.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\HardModeMinesCountStrategyTests.cs" />
+    <Compile Include="GameObjects\GameField\MinesCountStrategies\EasyModeMinesCountStrategyTests.cs" />
+    <Compile Include="Keyboard\CommandReaderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProgramTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BattleFieldGame\BattleFieldGame.csproj">
